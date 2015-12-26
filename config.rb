@@ -1,5 +1,3 @@
-require('render')
-
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -30,8 +28,7 @@ set(
   :autolink                     => true,
   :disable_indented_code_blocks => true,
   :quote                        => true,
-  :lax_spacing                  => true,
-  :renderer                     => CustomMarkdown
+  :lax_spacing                  => true
 )
 
 # Reload the browser automatically whenever files change
