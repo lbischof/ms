@@ -1,0 +1,11 @@
+language: ruby
+cache: bundler
+rvm:
+    - 2.2.1
+branches:
+  only:
+  - master # branch to build
+script:
+- bundle exec rake travis:script
+after_success:
+- bundle exec rake travis:after_success
