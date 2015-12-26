@@ -13,4 +13,4 @@ testing
 !!item aieaiea
 !!radio 20 gramms 2
 !!radio 30 gramms 4
-!!cart
+!!cart testing something 20
