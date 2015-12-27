@@ -1,3 +1,11 @@
-<% data.public_send(current_page.path.split('.')[0]).something.each do |f| %>
-    <%= f %>
-<% end %>
+<form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
+    <input type="hidden" name="userid" value="A4132041">
+    <input type="hidden" name="return" value="<%= current_page.url %>">
+
+    <input type="hidden" name="price" value="<%= current_page_data(product)[:price] %>">
+    <input type="hidden" name="product" value="<%= current_page_data(product)[:product] %>">
+    <% current_page_data(product).colours.each do |f| %>
+        <%= f %>
+    <% end %>
+    <button>Cart</button>
+</form>
