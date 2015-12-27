@@ -5,7 +5,7 @@
 
     <% current_page_data(product).colours.each do |colour| %>
         <label>
-            <%= image_tag "/images#{current_page.url}#{product}/#{colour.downcase.gsub(/[^0-9a-z]/, '')}.jpg" %>
+            <%= product_image_tag(product, colour) %>
             <p>
                 <input type="checkbox" name="product1[]" value="<%= colour %>">
                 <span><%= colour %></span>
