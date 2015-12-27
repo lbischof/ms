@@ -4,4 +4,8 @@ something:
     colours:
         - Yellow
         - Green
-        - Red
+        - Red Hair
+        - Gelb
+    radios:
+        20 gramms: 2.5
+        30 gramms: 4
