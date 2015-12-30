@@ -1,9 +1,9 @@
 module CustomHelpers
     def mals_multiple product
         begin
-            partial "partials/mals_multiple", locals: { product: product }
+            partial "system/partials/mals_multiple", locals: { product: product }
         rescue Exception => msg
-            puts "Error in CustomHelpers."
+            puts "Error in helpers: mals_multiple"
             puts "Page: #{current_page.path} Product: #{product}"
             puts msg
             raise
@@ -11,15 +11,14 @@ module CustomHelpers
     end
     def current_page_data product
         begin
-            data.public_send(current_page.path.split('.')[0]).public_send(product)
+            data[current_page.path.split('.')[0]][product]
         rescue Exception => msg
-            puts "Error in CustomHelpers."
-            puts "Page: #{current_page.path} Product: #{product}"
-            puts msg
+            puts "Data doesn't exist"
+            puts "Page: #{current_page.path.split('.')} Product: #{product}"
             raise
         end
     end
     def product_image_tag product, colour
-        image_tag "/images/#{current_page.path.split('.')[0]}/#{product}/#{colour.downcase.gsub(/[^0-9a-z]/, '')}.jpg"
+        image_tag "#{current_page.path.split('.')[0]}/#{colour.downcase.gsub(/[^0-9a-z]/, '')}.jpg"
     end
 end

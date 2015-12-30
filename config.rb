@@ -2,17 +2,12 @@
 # Page options, layouts, aliases and proxies
 ###
 
-# Per-page layout changes:
-#
-# With no layout
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
-
-# Ignore partials directory
-ignore 'partials/*'
-
-# General configuration
+# Ignore layouts and partials dir from build
+ignore 'system/layouts/*'
+ignore 'system/partials/*'
+set :css_dir, 'system/css'
+set :js_dir, 'system/js'
+set :layouts_dir, 'system/layouts'
 
 # Set markdown options
 set :markdown_engine, :redcarpet
