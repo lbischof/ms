@@ -1,4 +1,8 @@
 ---
 test:
-    partial: partial2
+    partial: mals-multiple
     product: something
+    colours:
+        - Red
+        - Yellow
+        - Green

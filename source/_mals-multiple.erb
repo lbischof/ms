@@ -1,0 +1,36 @@
+<% if not pdata.product %>
+    <% raise '#{current_path.url}: product is empty' %>
+<% end %>
+
+<form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
+    <input type="hidden" name="userid" value="A4132041">
+    <input type="hidden" name="return" value="<%= current_page.url %>">
+    <input type="hidden" name="product" value="<%= pdata.product %>">
+    <% if pdata.colours %>
+        <% pdata.colours.each do |colour| %>
+            <label>
+                <%= product_image_tag colour %>
+                <p>
+                    <input type="checkbox" name="product1[]" value="<%= colour %>">
+                    <span><%= colour %></span>
+                </p>
+                <% if pdata.textboxes %>
+                    <input type="number" name="product1[]">
+                <% end %>
+            </label>
+        <% end %>
+    <% end %>
+    <% if pdata.radios %>
+        <% pdata.radios.each do |radio| %>
+            <label>
+                <input name="productpr1" type="radio" value="<%= radio.join(':') %>">
+                    <%= radio[0] %> <%= number_to_currency(radio[1], :unit => "CHF").sub(/\.00$/, '.-') %>
+                </input>
+            </label>
+        <% end %>
+    <% else %>
+        <input type="hidden" name="price" value="<%= pdata[:price] %>">
+    <% end %>
+
+    <button>Cart</button>
+</form>
