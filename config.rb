@@ -22,12 +22,18 @@ set(
   :lax_spacing                  => true
 )
 
-activate :directory_indexes
 
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
 end
+
+ignore 'product.html.erb'
+data.products.each do |page, page_data|
+     proxy "/#{page}/index.html", "/product.html", :layout => page_data['layout'] || 'layout', :locals => { page: page }, :ignore => true
+end
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do

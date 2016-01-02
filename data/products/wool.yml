@@ -1,0 +1,9 @@
+---
+testing:
+    something: test
+    partial: thisispartial
+
+else2:
+    test: aiea
+    partial: partial2
+
