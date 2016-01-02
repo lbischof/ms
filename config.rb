@@ -32,6 +32,8 @@ ignore 'product.html.erb'
 data.products.each do |page, page_data|
      proxy "/#{page}/index.html", "/product.html", :layout => page_data['layout'] || 'layout', :locals => { page: page }, :ignore => true
 end
+proxy "/index.html", "/product.html", :layout => 'layout', :locals => { page: 'index' }, :ignore => true
+
 
 activate :directory_indexes
 

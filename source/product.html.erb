@@ -1,5 +1,5 @@
 <% data.products[page].each do |key, value| %>
-    <% unless value.is_a? String %>
+    <% if not value.is_a? String and value.partial %>
         <%= includepartial(value.partial, page, key) %>
     <% end %>
 <% end %>
