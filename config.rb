@@ -2,13 +2,6 @@
 # Page options, layouts, aliases and proxies
 ###
 
-# Ignore layouts and partials dir from build
-ignore 'system/layouts/*'
-ignore 'system/partials/*'
-set :css_dir, 'system/css'
-set :js_dir, 'system/js'
-set :layouts_dir, 'system/layouts'
-
 # Set markdown options
 set :markdown_engine, :redcarpet
 set(
@@ -30,6 +23,7 @@ end
 
 ignore 'product.html.erb'
 data.products.each do |page, page_data|
+     next if page == 'index'
      proxy "/#{page}/index.html", "/product.html", :layout => page_data['layout'] || 'layout', :locals => { page: page }, :ignore => true
 end
 proxy "/index.html", "/product.html", :layout => 'layout', :locals => { page: 'index' }, :ignore => true
