@@ -4,6 +4,6 @@ module CustomHelpers
     end
 
     def includepartial(partial, page, key)
-        partial "#{partial}", locals: { pdata: data['products'][page][key] }
+        partial "#{partial}", locals: { pdata: data['pages'][page][key] }
     end
 end

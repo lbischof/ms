@@ -21,12 +21,12 @@ configure :development do
   activate :livereload
 end
 
-ignore 'product.html.erb'
-data.products.each do |page, page_data|
+ignore 'page.html.erb'
+data.pages.each do |page, page_data|
      next if page == 'index'
-     proxy "/#{page}/index.html", "/product.html", :layout => page_data['layout'] || 'layout', :locals => { page: page }, :ignore => true
+     proxy "/#{page}/index.html", "/page.html", :layout => page_data['layout'] || 'layout', :locals => { page: page }, :ignore => true
 end
-proxy "/index.html", "/product.html", :layout => 'layout', :locals => { page: 'index' }, :ignore => true
+proxy "/index.html", "/page.html", :layout => 'layout', :locals => { page: 'index' }, :ignore => true
 
 
 activate :directory_indexes
