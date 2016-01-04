@@ -2,7 +2,11 @@
 test:
     partial: mals-multiple
     product: something
+    price: 2
     colours:
         - Red
         - Yellow
         - Green
+    radios:
+        20 Gramms: 2
+        50 Gramms: 3

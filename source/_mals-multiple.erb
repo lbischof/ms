@@ -1,11 +1,13 @@
 <% if not pdata.product %>
-    <% raise '#{current_path.url}: product is empty' %>
+    <% raise "#{current_page.path}: product is empty" %>
+<% end %>
+<% if pdata.radios and pdata.price %>
+    <% raise "#{current_page.path}: price and radios" %>
 <% end %>
 
-<form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
+<form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post" class="mals-multiple">
     <input type="hidden" name="userid" value="A4132041">
-    <input type="hidden" name="return" value="<%= current_page.url %>">
-    <input type="hidden" name="product" value="<%= pdata.product %>">
+    <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
     <% if pdata.colours %>
         <% pdata.colours.each do |colour| %>
             <label>
@@ -23,14 +25,15 @@
     <% if pdata.radios %>
         <% pdata.radios.each do |radio| %>
             <label>
-                <input name="productpr1" type="radio" value="<%= radio.join(':') %>">
+                <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= radio.join(' :') %>">
                     <%= radio[0] %> <%= number_to_currency(radio[1], :unit => "CHF").sub(/\.00$/, '.-') %>
                 </input>
             </label>
         <% end %>
     <% else %>
-        <input type="hidden" name="price" value="<%= pdata[:price] %>">
+        <input type="hidden" name="productpr1" value="<%= pdata[:product] %>, :<%= pdata[:price] %>">
     <% end %>
+    <input type="text" name="qty1">
 
     <button>Cart</button>
 </form>
