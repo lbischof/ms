@@ -6,4 +6,8 @@ module CustomHelpers
     def includepartial(partial, page, key)
         partial "#{partial}", locals: { pdata: data['pages'][page][key] }
     end
+
+    def markdown text
+        Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(text)
+    end
 end

@@ -2,6 +2,9 @@
 test:
     partial: mals-multiple
     product: something
+    description: |
+        # Something great
+        This is the description for something great!
     colours:
         - Red
         - Yellow

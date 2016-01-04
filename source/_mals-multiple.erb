@@ -4,7 +4,7 @@
 <% if pdata.radios and pdata.price %>
     <% raise "#{current_page.path}: price and radios" %>
 <% end %>
-
+<%= markdown pdata.description %>
 <form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post" class="mals-multiple">
     <input type="hidden" name="userid" value="A4132041">
     <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
