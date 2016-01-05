@@ -14,7 +14,12 @@ h1 {
   font-weight: 400;
   margin: 0;
 }
-
-.mals-multiple label {
-    display: inline-block;
+.mals-multiple {
+    input[type="number"] {
+        width: 50px;
+    }
+    label {
+        display: inline-block;
+        margin: 5px;
+    }
 }

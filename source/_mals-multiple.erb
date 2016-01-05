@@ -4,36 +4,44 @@
 <% if pdata.radios and pdata.price %>
     <% raise "#{current_page.path}: price and radios" %>
 <% end %>
-<%= markdown pdata.description %>
-<form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post" class="mals-multiple">
-    <input type="hidden" name="userid" value="A4132041">
-    <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
-    <% if pdata.colours %>
-        <% pdata.colours.each do |colour| %>
-            <label>
-                <%= product_image_tag colour %>
-                <p>
-                    <input type="checkbox" name="product1[]" value="<%= colour %>">
-                    <span><%= colour %></span>
-                </p>
-                <% if pdata.textboxes %>
-                    <input type="number" name="product1[]">
+<div class="mals-multiple"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
+    <%= markdown pdata.description %>
+    <form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
+        <input type="hidden" name="userid" value="A4132041">
+        <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
+        <% if pdata.colours %>
+            <% pdata.colours.each do |colour| %>
+                <label>
+                    <%= product_image_tag colour %>
+                    <div>
+                        <input type="checkbox" name="product1[]" value="<%= colour %>">
+                        <%= colour %>
+                    </div>
+                    <% if pdata.textboxes %>
+                        <input type="number" name="product1[]">
+                    <% end %>
+                </label>
+            <% end %>
+        <% end %>
+        <div>
+            <% if pdata.radios %>
+                <%# radios is an array of single hashes %>
+                <% pdata.radios.each do |radio| %>
+                    <label>
+                        <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>">
+                        <%= radio.keys.first %> <%= number_to_currency(radio.values.first, :unit => "CHF").sub(/\.00$/, '.-') %>
+                        </input>
+                    </label>
                 <% end %>
-            </label>
-        <% end %>
-    <% end %>
-    <% if pdata.radios %>
-        <% pdata.radios.each do |radio| %>
-            <label>
-                <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= radio.join(' :') %>">
-                    <%= radio[0] %> <%= number_to_currency(radio[1], :unit => "CHF").sub(/\.00$/, '.-') %>
-                </input>
-            </label>
-        <% end %>
-    <% else %>
-        <input type="hidden" name="productpr1" value="<%= pdata[:product] %>, :<%= pdata[:price] %>">
-    <% end %>
-    <input type="text" name="qty1">
+            <% else %>
+                <input type="hidden" name="productpr1" value="<%= pdata[:product] %>, :<%= pdata[:price] %>">
+            <% end %>
+            <input type="hidden" name="qty1">
+            <noscript>
+                <p>Please add up how many total: <input type="number" name="qty1"></p>
+            </noscript>
 
-    <button>Cart</button>
-</form>
+            <button>Cart</button>
+        </div>
+    </form>
+</div>
