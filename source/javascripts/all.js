@@ -16,19 +16,9 @@ function submitForm(event) {
     for (var i = 0; i < inputs.length; i++) {
         // only checked checkboxes
         if (inputs[i].checked) {
-            // the next input might be of type number
-            if (inputs[i+1] && inputs[i+1].type == "number") {
-                // if it's zero it should be 1
-                +inputs[i+1].value == 0 ? inputs[i+1].value = 1 : null;
-                // add the value to qty and convert string to integer
-                qty += +inputs[i+1].value;
-            } else {
-                // if theres no following number input
-                qty += 1;
-            }
-        // if the number input has value, the last checkbox should be checked
-        } else if (inputs[i].type == "number" && inputs[i].value && !inputs[i-1].checked) {
-            // since we missed the last checkbox, add the value
+            qty += 1;
+        // only filled number inputs
+        } else if (inputs[i].type == "number" && inputs[i].value) {
             qty += +inputs[i].value;
             // so that cart output is visually correct
             inputs[i-1].checked = true;
