@@ -14,16 +14,17 @@
         <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
         <% if pdata.colours %>
             <% pdata.colours.each do |colour| %>
-                <label>
+                <div class="colours">
                     <%= colour_image_tag colour %>
-                    <div>
+                    <%= "<label>" if not pdata.textboxes %>
                         <input type="checkbox" name="product1[]" value="<%= colour %>">
+                    <%= "<label>" if pdata.textboxes %>
                         <%= colour %>
-                    </div>
-                    <% if pdata.textboxes %>
-                        <input type="number" min="1" name="product1[]">
-                    <% end %>
-                </label>
+                        <% if pdata.textboxes %>
+                            <input type="number" min="1" name="product1[]">
+                        <% end %>
+                    </label>
+                </div>
             <% end %>
         <% end %>
         <div>
