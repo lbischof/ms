@@ -2,6 +2,7 @@
 test:
     partial: mals-multiple
     product: something
+    banner: true
 #   text_colour: "#ff0000"
     textboxes: true
     description: |

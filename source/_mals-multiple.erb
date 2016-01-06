@@ -4,15 +4,18 @@
 <% if pdata.radios and pdata.price %>
     <% raise "#{current_page.path}: price and radios" %>
 <% end %>
-<div class="mals-multiple"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
-    <%= markdown pdata.description %>
+<%= banner_image_tag pdata[:product] %>
+<section class="mals-multiple<%= " textboxes " if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
+    <div class="description">
+        <%= markdown pdata.description %>
+    </div>
     <form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
         <input type="hidden" name="userid" value="A4132041">
         <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
         <% if pdata.colours %>
             <% pdata.colours.each do |colour| %>
                 <label>
-                    <%= product_image_tag colour %>
+                    <%= colour_image_tag colour %>
                     <div>
                         <input type="checkbox" name="product1[]" value="<%= colour %>">
                         <%= colour %>
@@ -26,9 +29,9 @@
         <div>
             <% if pdata.radios %>
                 <%# radios is an array of single hashes %>
-                <% pdata.radios.each do |radio| %>
+                <% pdata.radios.each_with_index do |radio, index| %>
                     <label>
-                        <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>">
+                        <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>"<%= " checked " if index.odd? %>>
                         <%= radio.keys.first %> <%= number_to_currency(radio.values.first, :unit => "CHF").sub(/\.00$/, '.-') %>
                         </input>
                     </label>
@@ -44,4 +47,4 @@
             <button>Cart</button>
         </div>
     </form>
-</div>
+</section>

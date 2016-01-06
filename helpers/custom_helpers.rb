@@ -1,6 +1,10 @@
 module CustomHelpers
-    def product_image_tag colour
-        image_tag "#{current_page.path.split('.')[0]}/#{colour.downcase.gsub(/[^0-9a-z]/, '')}.jpg"
+    def colour_image_tag colour
+        image_tag "#{current_page.path.split('.')[0]}/#{colour.downcase.gsub(/[^0-9a-z](\(.*\))?/, '')}.jpg"
+    end
+
+    def banner_image_tag product
+        "<div class=\"banner\" style=\"background-image: url('images/#{current_page.path.split('.')[0]}/banner-#{product.downcase}.jpg')\"></div>"
     end
 
     def includepartial(partial, page, key)

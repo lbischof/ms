@@ -1,5 +1,7 @@
 //= require_tree .
 
+document.body.className += " js";
+
 var forms = document.forms;
 for (var i = 0; i < forms.length; i++) {
     if (forms[i].addEventListener) {

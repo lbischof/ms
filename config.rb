@@ -29,6 +29,7 @@ data.pages.each do |page, page_data|
 end
 proxy "/index.html", "/page.html", :layout => 'layout', :locals => { page: 'index' }, :ignore => true
 
+activate :automatic_image_sizes
 activate :relative_assets
 activate :directory_indexes
 
