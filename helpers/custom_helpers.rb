@@ -7,8 +7,8 @@ module CustomHelpers
         "<div class=\"banner\" style=\"background-image: url('images/#{current_page.path.split('.')[0]}/banner-#{product.downcase}.jpg')\"></div>"
     end
 
-    def includepartial(partial, page, key)
-        partial "#{partial}", locals: { pdata: data['pages'][page][key] }
+    def includepartial pdata
+        partial "#{pdata.partial}", locals: { pdata: pdata }
     end
 
     def markdown text

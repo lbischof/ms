@@ -1,9 +1,10 @@
 ---
-testing:
-    something: test
-    partial: thisispartial
+- title: Wool
+  description: test page
 
-else2:
-    test: aiea
-    partial: partial2
+- partial: thisispartial
+  something: test
+
+- partial: partial2
+  test: aiea
 

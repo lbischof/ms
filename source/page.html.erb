@@ -1,5 +1,5 @@
-<% data.pages[page].each do |key, value| %>
+<% page_data.each do |value| %>
     <% if not value.is_a? String and value.partial %>
-        <%= includepartial(value.partial, page, key) %>
+        <%= includepartial value %>
     <% end %>
 <% end %>
