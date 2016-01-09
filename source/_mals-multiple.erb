@@ -5,7 +5,7 @@
     <% raise "#{current_page.path}: price and radios" %>
 <% end %>
 <%= banner_image_tag pdata[:product] %>
-<section class="mals-multiple<%= " textboxes " if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
+<section class="mals-multiple<%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
     <div class="description">
         <%= markdown pdata.description %>
     </div>
@@ -32,9 +32,8 @@
                 <%# radios is an array of single hashes %>
                 <% pdata.radios.each_with_index do |radio, index| %>
                     <label>
-                        <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>"<%= " checked " if index.odd? %>>
+                        <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>"<%= " checked" if index.odd? %>>
                         <%= radio.keys.first %> <%= number_to_currency(radio.values.first, :unit => "CHF").sub(/\.00$/, '.-') %>
-                        </input>
                     </label>
                 <% end %>
             <% else %>

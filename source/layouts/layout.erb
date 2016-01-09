@@ -14,6 +14,17 @@
     </head>
 
     <body class="<%= page_classes %>">
+        <header>
+            <%= image_tag 'logo.svg' %>
+            <nav>
+                <ul>
+                    <li>Wool</li>
+                    <li>Needles</li>
+                    <li>Felt</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
         <%= yield %>
         <%= javascript_include_tag :all %>
     </body>
