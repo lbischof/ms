@@ -4,7 +4,11 @@
 <% if pdata.radios and pdata.price %>
     <% raise "#{current_page.path}: price and radios" %>
 <% end %>
-<%= banner_image_tag pdata[:product] %>
+<% if !pdata.radios and !pdata.price %>
+    <% raise "#{current_page.path}: product has no price" %>
+<% end %>
+
+<%= banner_image_tag pdata[:product] if pdata.banner %>
 <section class="mals-multiple<%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
     <div class="description">
         <%= markdown pdata.description %>
@@ -15,7 +19,7 @@
         <% if pdata.colours %>
             <% pdata.colours.each do |colour| %>
                 <div class="colours">
-                    <%= colour_image_tag colour %>
+                    <%= colour_image_tag(pdata.product, colour) %>
                     <%= "<label>" if not pdata.textboxes %>
                         <input type="checkbox" name="product1[]" value="<%= colour %>">
                     <%= "<label>" if pdata.textboxes %>

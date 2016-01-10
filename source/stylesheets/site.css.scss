@@ -73,9 +73,13 @@ p {
         display: none;
     }
 }
+.about > div {
+    max-width: 52em;
+    margin: auto;
+}
 .mals-multiple {
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 52em;
     padding: 0 1em;
 
 
@@ -83,15 +87,15 @@ p {
         width: 50px;
         display: block;
     }
-    .colours:first-of-type {
-        margin-left: 0;
-    }
     .colours {
         display: inline-block;
         margin: 5px;
     }
     .colours label {
         display: block;
+    }
+    .radios {
+        padding: 20px 5px;
     }
     .radios label {
         margin-right: 10px;
