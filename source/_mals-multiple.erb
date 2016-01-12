@@ -1,18 +1,20 @@
 <% if not pdata.product %>
-    <% raise "#{current_page.path}: product is empty" %>
+    <% raise "#{get_current_page}: product is empty" %>
 <% end %>
 <% if pdata.radios and pdata.price %>
-    <% raise "#{current_page.path}: price and radios" %>
+    <% raise "#{get_current_page}: price and radios" %>
 <% end %>
 <% if !pdata.radios and !pdata.price %>
-    <% raise "#{current_page.path}: product has no price" %>
+    <% raise "#{get_current_page}: product has no price" %>
 <% end %>
 
 <%= banner_image_tag pdata[:product] if pdata.banner %>
 <section class="mals-multiple<%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
-    <div class="description">
-        <%= markdown pdata.description %>
-    </div>
+    <% if pdata.description %>
+        <div class="description">
+            <%= markdown pdata.description %>
+        </div>
+    <% end %>
     <form action="http://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
         <input type="hidden" name="userid" value="A4132041">
         <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
