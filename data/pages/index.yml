@@ -6,7 +6,6 @@
   product: Corriedale
   banner: true
 # text_colour: "#ff0000"
-  textboxes: true
   description: |
     # Corriedale
     Corriedale is courser (about 30 microns) and is preferred for needle felting simply because it is easier.
@@ -66,15 +65,15 @@
     - Grey
     - White
   radios:
-    - 20 Gramms: 2
-    - 50 Gramms: 3
+    - 20 gramms: 2.2
+    - 50 gramms: 5
+    - 100 grams: 9.5
 
 
 - partial: mals-multiple
   product: EuropeanMerino
   banner: false
 # text_colour: "#ff0000"
-  textboxes: false
   description: |
     # European Merino
     European Merino is courser (more like Corriedale) but felts like Merino.
@@ -105,14 +104,14 @@
     - Grape
     - Magenta
   radios:
-    - 20 Gramms: 2
-    - 50 Gramms: 3
+    - 20 gramms: 2.2
+    - 50 gramms: 5
+    - 100 grams: 9.5
 
 - partial: mals-multiple
   product: Merino
   banner: false
 # text_colour: "#ff0000"
-  textboxes: true
   description: |
     # Merino
     Merino shrinks about one third, less the thinner it is applied.
@@ -134,14 +133,14 @@
     - Slate
     - Stone
   radios:
-    - 20 Gramms: 2
-    - 50 Gramms: 3
+    - 20 gramms: 2.2
+    - 50 gramms: 5
+    - 100 grams: 9.5
 
 - partial: mals-multiple
   product: Mohairroving
   banner: true
 # text_colour: "#ff0000"
-  textboxes: true
   description: |
     # Mohair Roving
     This is the description for something great!
@@ -154,14 +153,13 @@
     - Red
     - Grey
   radios:
-    - 20 Gramms: 2
-    - 50 Gramms: 3
+    - 20 gramms: 4.4
+    - 50 gramms: 10
 
 - partial: mals-multiple
   product: Mohairlocks
   banner: false
 # text_colour: "#ff0000"
-  textboxes: true
   description: |
     # Mohairlocks
     Hand dyed Kidmohairlocks are great for hair or beards. Goat's hair has a light shine.
@@ -196,5 +194,6 @@
     - Grey
     - Black
   radios:
-    - 20 Gramms: 2
-    - 50 Gramms: 3
+    - 20 gramms: 4.4
+    - 50 gramms: 10
+    - 100 grams: 19.5

@@ -39,7 +39,7 @@
                 <% pdata.radios.each_with_index do |radio, index| %>
                     <label>
                         <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>"<%= " checked" if index.odd? %>>
-                        <%= radio.keys.first %> <%= number_to_currency(radio.values.first, :unit => "CHF").sub(/\.00$/, '.-') %>
+                        <%= radio.keys.first %> <%= number_to_currency(radio.values.first, :unit => "$").sub(/\.00$/, '.-') %>
                     </label>
                 <% end %>
             <% else %>
