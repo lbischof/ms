@@ -23,6 +23,7 @@ body {
 }
 
 header {
+    text-align: center;
     img, h1 {
         display: inline-block;
         vertical-align: top;
@@ -39,12 +40,11 @@ header {
         margin: 0;
         color: #C6CA2F;
     }
+}
 
-    nav {
-        float: right;
-        padding-right: 20px;
-        padding-top: 5px;
-    }
+nav {
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
 ul {
@@ -134,4 +134,13 @@ footer {
     bottom: 0;
     height: 100px;
     width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+    header {
+        text-align: left;
+    }
+    nav {
+        float: right;
+    }
 }
