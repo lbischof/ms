@@ -1,11 +1,17 @@
 @charset "utf-8";
 @import "normalize";
 
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y: scroll;
+}
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-size: 1em;
     color: #444;
+    margin: 0 0 100px; /* bottom = footer height */
 }
 
 header {
@@ -15,38 +21,45 @@ header {
     }
 
     img {
-        padding: 10px;
+        padding: 0.8em;
     }
+
     h1 {
         font-family: wiffles;
-        font-size: 40px;
-        padding: 5px;
+        font-size: 2.5em;
+        padding-top: 10px;
         margin: 0;
+        color: #C6CA2F;
     }
 
     nav {
         float: right;
         padding-right: 20px;
-        font-size: 20px;
-        color: #444;
         padding-top: 5px;
     }
+}
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
 
-    li {
-        display: inline-block;
-        padding: 15px;
-    }
+li {
+    display: inline-block;
+    padding: 15px;
+}
 
-    li a {
-        display: block;
-        text-align: center;
-    }
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #AE00AD;
+}
+
+ul .active {
+
 }
 
 h1 {
@@ -59,6 +72,8 @@ p {
     font-size: 1.12em;
     margin-top: 0;
 }
+
+
 .banner {
     background-position: center;
     background-repeat: no-repeat;
@@ -73,12 +88,13 @@ p {
         display: none;
     }
 }
-.about > div {
+.container {
     max-width: 52em;
     margin: auto;
+    padding: 0 1em;
 }
 .mals-multiple {
-    margin: 0 auto;
+    margin: 0 auto 5em;
     max-width: 52em;
     padding: 0 1em;
 
@@ -100,4 +116,14 @@ p {
     .radios label {
         margin-right: 10px;
     }
+}
+
+footer {
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
 }
