@@ -1,5 +1,18 @@
 @charset "utf-8";
 
+@font-face {
+	/* This declaration targets Internet Explorer */
+	font-family: 'wiffles';
+	src: url('wiffles-webfont.eot');
+}
+@font-face {
+	/* This declaration targets everything else */
+	font-family: 'wiffles';
+	src: url(//:) format('no404'), url('fonts/wiffles-webfont.woff') format('woff'), url('wiffles-webfont.ttf') format('truetype'), url('wiffles-webfont.svg#webfontTO44lxN7') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
