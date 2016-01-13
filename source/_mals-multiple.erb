@@ -9,7 +9,7 @@
 <% end %>
 
 <%= banner_image_tag pdata[:product] if pdata.banner %>
-<section class="mals-multiple<%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
+<section class="mals-multiple<%= " #{sanitize pdata.product}" if pdata.product %><%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
     <% if pdata.description %>
         <div class="description">
             <%= markdown pdata.description %>
