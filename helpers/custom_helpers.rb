@@ -8,7 +8,7 @@ module CustomHelpers
     end
 
     def sanitize string
-        string.downcase.gsub(/[^0-9a-z](\(.*\))?/, '')
+        string.downcase.gsub(/[^0-9a-z]/, '')
     end
 
     def colour_image_tag(product, colour)

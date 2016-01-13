@@ -10,9 +10,6 @@
     The artist and hand felter uses the felting needles to create beautiful objects made of wool roving.
 
     As your felting work becomes more precise you will appreciate the specialty of a specific felting needle.
-
-    We are the Canadian distributor of [WIZPICK](http://wizpick.com) hand felting needles with the unique globally recognised colour code system which makes working with felting needles a lot less confusing:
-    easy names to communicate with friends and fellow felters
-    easy identification during the exciting needle felting process
   colours:
-      - Lime
+      - Lime:
+          gauge: 40 3x3x3

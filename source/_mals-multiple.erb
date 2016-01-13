@@ -20,12 +20,19 @@
         <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
         <% if pdata.colours %>
             <% pdata.colours.each do |colour| %>
+                <%# Check if it's a hash %>
+                <% if colour.respond_to?(:each_pair) %>
+                    <% colour, options = colour.first %>
+                <% end %>
                 <div class="colours">
                     <%= colour_image_tag(pdata.product, colour) %>
                     <%= "<label>" if not pdata.textboxes %>
                         <input type="checkbox" name="product1[]" value="<%= colour %>">
                     <%= "<label>" if pdata.textboxes %>
                         <%= colour %>
+                        <% if options && options.gauge %>
+                            <%= options.gauge %>
+                        <% end %>
                         <% if pdata.textboxes %>
                             <input type="number" min="1" name="product1[]">
                         <% end %>
