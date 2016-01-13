@@ -15,8 +15,10 @@
 
     <body class="<%= page_classes %>">
         <header>
-            <%= image_tag 'logo.svg' %>
-            <h1>maplesplendor</h1>
+            <% link_to '/index.html' do %>
+                <%= image_tag 'logo.svg' %>
+                <h1>maplesplendor</h1>
+            <% end %>
             <nav>
                 <ul>
                     <li><%= nav_link("Wool", "/index.html") %></li>
