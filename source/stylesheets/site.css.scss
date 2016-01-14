@@ -99,6 +99,11 @@ p {
     margin-top: 0;
 }
 
+button {
+    font-size: 1.1em;
+    color: #222;
+}
+
 
 .banner {
     background-position: center;
@@ -138,9 +143,13 @@ p {
     }
     .radios {
         padding: 20px 5px;
+        font-size: 1.12em;
     }
     .radios label {
         margin-right: 10px;
+        white-space: nowrap;
+        display:block;
+        padding-bottom: 10px;
     }
 }
 .wizpickfeltingneedles {
@@ -176,5 +185,8 @@ footer {
     }
     .banner {
         height: 130px;
+    }
+    .mals-multiple .radios label {
+        display: inline-block;
     }
 }
