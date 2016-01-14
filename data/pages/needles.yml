@@ -116,10 +116,42 @@
   radios:
     - Price group three: 2.6
 
+- partial: mals-single
+  product: Completion Needle Set
+  textbox: true
+  price: 33
+  description: |
+      # Completion Set
+      Order the complete set, try them all out and reorder more of your favorite ones.
+
+- partial: mals-single
+  product: Novice Needle Set
+  textbox: true
+  price: 16
+  description: |
+      # Novice Set
+      Are you just beginning to felt?
+
+- partial: mals-single
+  product: Devotion Needle Set
+  textbox: true
+  price: 17
+  description: |
+      # Devotion Set
+      As your felting work becomes more precise you will appreciate the specialty of a specific felting needle.
+
+- partial: mals-single
+  product: Merino Needle Set
+  textbox: true
+  price: 12
+  description: |
+      # Merino Set
+      Wonderful for fine wools, these needles are hard to find.<Paste>
+
+
+
 - partial: markdown
-  markdown:
-
-
+  markdown: |
     Felting needles can also be used to join yarn, to mend holes in felted or knitted fabric, for rooting doll hair or to start or maintain dreadlocks.
     Often wool is added to create a unique hairdo.
 

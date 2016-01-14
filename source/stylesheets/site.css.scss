@@ -32,7 +32,7 @@ body {
     line-height: 1.5;
     font-size: 1em;
     color: #444;
-    padding-bottom: 200px; /* bottom = footer height */
+    padding-bottom: 170px; /* bottom = footer height */
     margin: 0;
 }
 
@@ -61,8 +61,7 @@ header {
 }
 
 nav {
-    padding-right: 20px;
-    padding-top: 5px;
+    padding: 7px 20px;
 }
 
 ul {
@@ -74,7 +73,6 @@ ul {
 
 li {
     display: inline-block;
-    padding: 15px;
 }
 
 li a {
@@ -82,6 +80,7 @@ li a {
     text-align: center;
     text-decoration: none;
     color: #444;
+    padding: 15px;
 }
 
 ul .active {
@@ -99,8 +98,16 @@ p {
     margin-top: 0;
 }
 
+a {
+    transition:color 0.2s ease;
+}
+
+a:hover:not(.active) {
+    color: black;
+}
+
 button {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #222;
 }
 
@@ -120,7 +127,7 @@ button {
     }
 }
 .container {
-    max-width: 52em;
+    max-width: 55em;
     margin: auto;
     padding: 0 1em;
 }
@@ -152,6 +159,15 @@ button {
         padding-bottom: 10px;
     }
 }
+.mals-single {
+    margin: 0 auto 5em;
+    max-width: 55em;
+    padding: 0 1em;
+
+    input[type="number"] {
+        width: 50px;
+    }
+}
 .wizpickfeltingneedles {
     margin-bottom: 2em;
 }
@@ -171,7 +187,7 @@ footer {
     left: 0;
     bottom: 0;
     font-size: 1em;
-    height: 200px;
+    height: 170px;
     padding-top: 30px;
     width: 100%;
 }

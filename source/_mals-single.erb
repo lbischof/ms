@@ -1,0 +1,23 @@
+<% if not pdata.product %>
+    <% raise "#{get_current_page}: product is empty" %>
+<% end %>
+<% if not pdata.price %>
+    <% raise "#{get_current_page}: no price specified" %>
+<% end %>
+
+<section class="mals-single<%= " #{sanitize pdata.product}" if pdata.product %><%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
+    <% if pdata.description %>
+        <div class="description">
+            <%= markdown pdata.description %>
+        </div>
+    <% end %>
+    <form action="http://ww8.aitsafe.com/cf/add.cfm" method="post">
+        <input type="hidden" name="userid" value="A4132041">
+        <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
+        <input type="hidden" name="price" value="<%= pdata[:price] %>">
+        <input type="hidden" name="product" value="<%= pdata[:product] %>">
+        <input type="number" min="1" name="qty" value="1">
+
+            <button>Cart</button>
+    </form>
+</section>
