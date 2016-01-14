@@ -1,11 +1,11 @@
 ---
-- title: test title
+- title: Colourful felting fibres - Maplesplendor
   description: some description
 
 - partial: mals-multiple
   product: Corriedale
   banner: true
-  text_colour: "#417DB1"
+  text_colour: "#3E70A5"
   description: |
     # Corriedale
     Corriedale is courser (about 30 microns) and is preferred for needle felting simply because it is easier.

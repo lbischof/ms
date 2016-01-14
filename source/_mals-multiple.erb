@@ -7,6 +7,7 @@
 <% if !pdata.radios and !pdata.price %>
     <% raise "#{get_current_page}: product has no price" %>
 <% end %>
+<% pdata.images = true if not defined? pdata.images %>
 
 <%= banner_image_tag pdata[:product] if pdata.banner %>
 <section class="mals-multiple<%= " #{sanitize pdata.product}" if pdata.product %><%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
@@ -25,13 +26,16 @@
                     <% colour, options = colour.first %>
                 <% end %>
                 <div class="colours">
-                    <%= colour_image_tag(pdata.product, colour) %>
+                    <%= colour_image_tag(pdata.product, colour) if pdata.images %>
                     <%= "<label>" if not pdata.textboxes %>
                         <input type="checkbox" name="product1[]" value="<%= colour %>">
                     <%= "<label>" if pdata.textboxes %>
-                        <%= colour %>
+                        <span<%= " style=\"color: #{options.colour}\"" if options && options.colour %>><%= colour %></span>
                         <% if options && options.gauge %>
                             <%= options.gauge %>
+                        <% end %>
+                        <% if options && options.usage %>
+                            <br><%= options.usage %>
                         <% end %>
                         <% if pdata.textboxes %>
                             <input type="number" min="1" name="product1[]">
@@ -45,7 +49,7 @@
                 <%# radios is an array of single hashes %>
                 <% pdata.radios.each_with_index do |radio, index| %>
                     <label>
-                        <input name="productpr1" type="radio" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>"<%= " checked" if index.odd? %>>
+                        <input name="productpr1" type="<%= pdata.radios.length == 1 ? "hidden" : "radio" %>" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>"<%= " checked" if pdata.radios.length == 1 or index == 1 %>>
                         <%= radio.keys.first %> <%= number_to_currency(radio.values.first, :unit => "$").sub(/\.00$/, '.-') %>
                     </label>
                 <% end %>

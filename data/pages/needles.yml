@@ -2,14 +2,125 @@
 
 - partial: mals-multiple
   product: Wizpick Felting Needles
-  price: 10
   textboxes: true
+  images: false
+  banner: true
   description: |
     # Wizpick Felting Needles
-    Felting needles are tools developed for and used in big machines to produce non woven textiles like car carpets.
-    The artist and hand felter uses the felting needles to create beautiful objects made of wool roving.
+    <span style="color: #E5651A">With the globaly recognised colour code system</span>
 
-    As your felting work becomes more precise you will appreciate the specialty of a specific felting needle.
+    There are endless possibilities, when working with wool.
+    The hair from sheep is a sustainable, renewable resource, not to mention it's ability to keep you warm and dry.
+    You can knit wool, weave wool or felt wool: wet felt it with soap and water or dry felt it with a felting needle or combine both methods.
+
+    When jabbed into wool the barbs catch and tangle the fibre sculpturing fine detail.
+    The gauge (diameter) for wool needles ranges from 32 (coarse) to 42 (super fine).
+    In general, start your project with a coarser needle and work to a finer needle for finishing.
+    Choose thicker needles to felt coarse fibers and finer needles when working with finer fibers.
   colours:
       - Lime:
+          gauge: 32 3x3x3
+          usage: Course
+          colour: "#7CBC52"
+      - Green:
+          gauge: 36 3x3x3
+          usage: Fast
+          colour: "#599732"
+      - Pink:
+          gauge: 32 3x3x0
+          usage: Strong
+          colour: "#FC8E99"
+      - Mauve:
+          gauge: 36 2x2x2
+          usage: Kids
+          colour: "#CE85B1"
+      - Gilt:
+          gauge: 32 2x2x2
+          usage: Reverse
+          colour: ""
+  radios:
+    - Price group one: 1.8
+
+- partial: mals-multiple
+  product: Wizpick Felting Needles
+  textboxes: true
+  images: false
+  banner: false
+  description: |
+    Wizpick felting needles cover the whole range and will allow you to explore new techniques and ideas.
+    The best tools for the best results. More information is available on [www.wizpick.com](http://wizpick.com)
+  colours:
+      - Blue:
+          gauge: 32 8x0x0
+          usage: Sideways
+          colour: "#4F579A"
+      - Brown:
           gauge: 40 3x3x3
+          usage: Indent
+          colour: "#82662D"
+      - Burgundy:
+          gauge: 38 2x2x2
+          usage: Deep
+          colour: "#944850"
+      - Yellow:
+          gauge: 40 2x2x2
+          usage: Outline
+          colour: "#F1E13B"
+      - Orange:
+          gauge: 40 2x2x2
+          usage: Tip felter
+          colour: "#FDAD53"
+      - Gold:
+          gauge: 40 3x3x0
+          usage: like Pink
+          colour: "#FDD047"
+      - Cream:
+          gauge: 40 2x2x2
+          usage: Merino
+          colour: "#EEDA84"
+  radios:
+    - Price group two: 2.1
+
+- partial: mals-multiple
+  product: Wizpick Felting Needles
+  textboxes: true
+  images: false
+  banner: false
+  description: |
+    Most felting needles are triangular with three working edges, except Star Needles, which are a new innovation with four edges.
+  colours:
+      - Red:
+          gauge: 36 2x2x2x2
+          usage: Condense
+          colour: "#E1483E"
+      - Peach:
+          gauge: 38 2x2x2x2
+          usage: like Red
+          colour: "#FCC699"
+      - White:
+          gauge: 42 2x2x2
+          usage: Fine
+          colour: "#D0D0CF"
+      - Grey:
+          gauge: 42 1x1x1
+          usage: Finishing
+          colour: "#797972"
+      - Aqua:
+          gauge: 40 6x0x0
+          usage: like Blue
+          colour: "#6EAAC3"
+      - Silver:
+          gauge: 40 2x2x2
+          usage: like Gilt
+          colour: ""
+  radios:
+    - Price group three: 2.6
+
+- partial: markdown
+  markdown:
+
+
+    Felting needles can also be used to join yarn, to mend holes in felted or knitted fabric, for rooting doll hair or to start or maintain dreadlocks.
+    Often wool is added to create a unique hairdo.
+
+
