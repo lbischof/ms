@@ -12,7 +12,7 @@ module CustomHelpers
     end
 
     def colour_image_tag(product, colour)
-        image_tag "#{get_current_page}/#{sanitize product}/#{sanitize colour}.jpg"
+        image_tag("#{get_current_page}/#{sanitize product}/#{sanitize colour}.jpg", { alt: colour })
     end
 
     def banner_image_tag product

@@ -16,7 +16,7 @@
     <body class="<%= page_classes %>">
         <header>
             <% link_to '/index.html' do %>
-                <%= image_tag 'logo.svg' %>
+                <%= image_tag('logo.svg', { alt: "Maplesplendor" }) %>
                 <h1>maplesplendor</h1>
             <% end %>
             <nav>
@@ -30,7 +30,7 @@
         </header>
         <%= yield %>
         <footer>
-                <%= image_tag 'logo.svg' %>
+            <%= image_tag('logo.svg', { alt: "Maplesplendor"}) %>
             <ul>
                 <li><%= nav_link("Shopping Information", "/shopping-information/index.html") %></li>
                 <li><%= nav_link("Cart", "http://ww8.aitsafe.com/cf/review.cfm?userid=A4132041") %></li>
