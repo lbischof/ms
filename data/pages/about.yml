@@ -1,5 +1,6 @@
 - partial: markdown
   text_colour: "#3E70A5"
+  banner: about
   markdown: |
     # About
     It's about inspiring you, about making the world more colourful. Colour is life.

@@ -16,7 +16,7 @@ module CustomHelpers
     end
 
     def banner_image_tag product
-        "<div class=\"banner\" style=\"background-image: url('images/#{get_current_page}/#{sanitize product}/banner-#{sanitize product}.jpg')\"></div>"
+        "<div class=\"banner\" style=\"background-image: url('/images/banners/banner-#{sanitize product}.jpg')\"></div>"
     end
 
     def includepartial pdata
