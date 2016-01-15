@@ -1,4 +1,38 @@
 ---
 
 - partial: markdown
-  markdown: Just some order information
+  text_colour: "#3E70A5"
+  markdown: |
+    # Shopping information
+    Welcome to Maplesplendor's new website….a bit more simple, I hope you like it.
+    I really appreciate your feedback, any thoughts or questions?
+
+    As most of you know we have been shipping from Europe for the last few years.
+    Now back in Canada, stock needs to be organised, so just ask if you are looking for something we used to have.
+    My son is holding the fort in Switzerland and will gladly still ship things over.
+    As of April first more and more parcels will be shipped within Canada, which means we will be charging you taxes.
+
+    As always, all prices are quoted and charged in <span style="color: #868920">Canadian dollars</span>.
+    We accept Visa, Mastercard or American Express.
+    Please use our secure shopping cart (lock in the address bar).
+    There is a little message box at check out where you can leave us a note.
+    #Shipping
+    Shipping cost with Canada Post depends on size and weight.
+    Within BC costs less than to Eastern Canada.
+    Our shopping cart now calculates $16 per parcel.
+    We will reduce this if we need to pay less and notify you if it is more.
+    Please bear with us until we figure this out.
+
+    <span style="color: #868920">Felting needles can be shipped in an envelope.</span>
+
+    Normally we do not include an invoice in the parcel.
+    (paper is a natural resource and should not just be tossed in the waste basket.)
+    If you would like to receive a detailed invoice (for example for tax purposes)
+    please don't hesitate to email (or include a message in the message box) and we will gladly email you one.
+
+    We  provide quality products. If for some reason you are not satisfied, please email us; we will be glad to assist you.
+    Our parcels are packed with care, but possibly things happen to the boxes on their way to you.
+    If an item arrives damaged, please let us know within 4 days of receiving your package.
+    Please don't send returns without contacting us first.
+
+    [maplesplend(at)maplesplendor.ca](mailto:maplesplend@maplesplendor.ca)

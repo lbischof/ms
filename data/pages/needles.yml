@@ -116,43 +116,56 @@
   radios:
     - Price group three: 2.6
 
-- partial: mals-single
-  product: Completion Needle Set
-  textbox: true
-  price: 33
-  description: |
-      # Completion Set
-      Order the complete set, try them all out and reorder more of your favorite ones.
-
-- partial: mals-single
-  product: Novice Needle Set
-  textbox: true
-  price: 16
-  description: |
-      # Novice Set
-      Are you just beginning to felt?
-
-- partial: mals-single
-  product: Devotion Needle Set
-  textbox: true
-  price: 17
-  description: |
-      # Devotion Set
-      As your felting work becomes more precise you will appreciate the specialty of a specific felting needle.
-
-- partial: mals-single
-  product: Merino Needle Set
-  textbox: true
-  price: 12
-  description: |
-      # Merino Set
-      Wonderful for fine wools, these needles are hard to find.<Paste>
-
-
-
 - partial: markdown
   markdown: |
     Felting needles can also be used to join yarn, to mend holes in felted or knitted fabric, for rooting doll hair or to start or maintain dreadlocks.
     Often wool is added to create a unique hairdo.
 
+- partial: markdown
+  markdown: |
+    # Needle Felting Sets
+    Felting needles can also be used to join yarn, to mend holes in felted or knitted fabric, for rooting doll hair or to start or maintain dreadlocks.
+    Often wool is added to create a unique hairdo.
+
+- partial: html
+  html: <div class="container">
+
+- partial: mals-single
+  product: Completion Needle Set
+  textbox: true
+  price: 37
+  text_colour: "#3E70A5"
+  description: |
+      # Completion Set $37
+      18 needles: Get them all
+
+- partial: mals-single
+  product: Novice Needle Set
+  textbox: true
+  price: 18
+  text_colour: "#00B03E"
+  description: |
+      # Novice Set $18
+      9 needles: Start with these<br>red, burgundy, mauve, brown,<br>orange, yellow, cream, blue, gilt
+
+- partial: mals-single
+  product: Devotion Needle Set
+  textbox: true
+  price: 19
+  text_colour: "#D43026"
+  description: |
+      # Devotion Set $19
+      9 needles: The second half
+
+- partial: mals-single
+  product: Merino Needle Set
+  textbox: true
+  price: 14
+  text_colour: "#AE00AD"
+  description: |
+      # Merino Set $14
+      6 needles: Fine fibre experts<br>orange, white, grey, aqua, cream, silver
+
+- partial: html
+  html: </div>
 

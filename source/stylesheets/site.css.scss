@@ -179,7 +179,17 @@ button {
         display: block;
     }
 }
-
+.completionneedleset, .noviceneedleset, .devotionneedleset, .merinoneedleset {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 10px;
+    h1 {
+        font-size: 1.3em;
+    }
+    p {
+        margin-bottom: 5px;
+    }
+}
 footer {
     border-top: 1px solid #e5e5e5;
     text-align: center;
