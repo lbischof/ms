@@ -124,8 +124,14 @@
 - partial: markdown
   markdown: |
     # Needle Felting Sets
-    Felting needles can also be used to join yarn, to mend holes in felted or knitted fabric, for rooting doll hair or to start or maintain dreadlocks.
-    Often wool is added to create a unique hairdo.
+    There are a few thousand different needles available for
+    specific industrial applications.
+    Wizpick felting needles have been carefully selected to cover every
+    handicraft use. Flowers on felted bead jewelry demand or need different
+    needles than life-size needle felted sculptures.
+    Of course it takes some
+    patience and practice to discover the uniqueness of each and every needle.
+    More information is available on [www.wizpick.com](http://wizpick.com)
 
 - partial: html
   html: <div class="container">

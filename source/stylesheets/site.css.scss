@@ -31,7 +31,7 @@ body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-size: 1em;
-    color: #444;
+    color: #555;
     padding-bottom: 170px; /* bottom = footer height */
     margin: 0;
 }
@@ -79,7 +79,6 @@ li a {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #444;
     padding: 15px;
 }
 
@@ -100,6 +99,7 @@ p {
 
 a {
     transition:color 0.2s ease;
+    color: inherit;
 }
 
 a:hover:not(.active) {
@@ -120,6 +120,7 @@ button {
     height: 90px;
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
+    margin-bottom: 10px;
 }
 .js {
     .mals-multiple.textboxes input[type="checkbox"] {
