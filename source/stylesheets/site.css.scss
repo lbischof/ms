@@ -232,6 +232,12 @@ button {
         margin-bottom: 5px;
     }
 }
+.links {
+    a:after {
+        content: "\a";
+        white-space: pre;
+    }
+}
 footer {
     border-top: 1px solid #e5e5e5;
     text-align: center;
@@ -242,6 +248,9 @@ footer {
     height: 170px;
     padding-top: 30px;
     width: 100%;
+    a {
+        text-decoration: none;
+    }
 }
 
 
