@@ -111,11 +111,58 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100%;
-    height: 90px;
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
-    margin-bottom: 10px;
+    height: 90px;
 }
+
+.banner-corriedale {
+    background-image: url("/images/banners/banner-corriedale-700.jpg");
+    @media only screen and (min-width: 700px) and (max-width: 1200px) {
+        background-image: url("/images/banners/banner-corriedale-1200.jpg");
+    }
+    @media only screen and (min-width: 1200px) {
+        background-image: url("/images/banners/banner-corriedale-2000.jpg");
+    }
+
+}
+.banner-wizpickfeltingneedles {
+    background-image: url("/images/banners/banner-wizpickfeltingneedles-700.jpg");
+    @media only screen and (min-width: 700px) and (max-width: 1200px) {
+        background-image: url("/images/banners/banner-wizpickfeltingneedles-1200.jpg");
+    }
+    @media only screen and (min-width: 1200px) {
+        background-image: url("/images/banners/banner-wizpickfeltingneedles-2000.jpg");
+    }
+}
+.banner-about {
+    background-image: url("/images/banners/banner-about-700.jpg");
+    @media only screen and (min-width: 700px) and (max-width: 1200px) {
+        background-image: url("/images/banners/banner-about-1200.jpg");
+    }
+    @media only screen and (min-width: 1200px) {
+        background-image: url("/images/banners/banner-about-2000.jpg");
+    }
+}
+.banner-merino {
+    background-image: url("/images/banners/banner-merino-700.jpg");
+    @media only screen and (min-width: 700px) and (max-width: 1200px) {
+        background-image: url("/images/banners/banner-merino-1200.jpg");
+    }
+    @media only screen and (min-width: 1200px) {
+        background-image: url("/images/banners/banner-merino-2000.jpg");
+    }
+}
+.banner-mohairroving {
+    background-image: url("/images/banners/banner-mohairroving-700.jpg");
+    @media only screen and (min-width: 700px) and (max-width: 1200px) {
+        background-image: url("/images/banners/banner-mohairroving-1200.jpg");
+    }
+    @media only screen and (min-width: 1200px) {
+        background-image: url("/images/banners/banner-mohairroving-1568.jpg");
+    }
+}
+
 .js {
     .mals-multiple.textboxes input[type="checkbox"] {
         display: none;
@@ -197,7 +244,17 @@ footer {
     width: 100%;
 }
 
-@media screen and (min-width: 700px) {
+
+@media screen and (min-width: 600px) {
+    .banner {
+        height: 110px;
+    }
+    .mals-multiple .radios label {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 750px) {
     header {
         text-align: left;
     }
@@ -206,8 +263,5 @@ footer {
     }
     .banner {
         height: 130px;
-    }
-    .mals-multiple .radios label {
-        display: inline-block;
     }
 }
