@@ -3,7 +3,7 @@ task default: %w[test]
 task :test do
   puts "\nBuilding project"
   try "middleman build"
-  try "htmlproof --allow-hash-href ./build"
+  try "htmlproof --allow-hash-href --only-4xx ./build"
 end
 
 task :deploy do
