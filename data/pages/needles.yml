@@ -48,7 +48,7 @@
   banner: false
   description: |
     Wizpick felting needles cover the whole range and will allow you to explore new techniques and ideas.
-    The best tools for the best results. More information is available on [www.wizpick.com](http://wizpick.com)
+    The best tools for the best results. More information is available on <a href="http://wizpick.com/en/dynamic" target="_blank">www.wizpick.com</a>
   colours:
       - Blue:
           gauge: 32 8x0x0
@@ -131,7 +131,7 @@
     needles than life-size needle felted sculptures.
     Of course it takes some
     patience and practice to discover the uniqueness of each and every needle.
-    More information is available on [www.wizpick.com](http://wizpick.com)
+    More information is available on <a href="http://wizpick.com/en/dynamic" target="_blank">www.wizpick.com</a>
 
 - partial: html
   html: <div class="container">
