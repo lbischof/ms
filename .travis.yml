@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.2.1
+  - 2.3.0
 branches:
   only:
   - source # branch to build
@@ -10,7 +10,7 @@ addons:
     packages:
       - jpegoptim
 script:
-  - jpegoptim --max=80 --strip-all -T5 -o source/images/{**/,**/**/}*.jpg
+  - jpegoptim --max=80 --strip-all --threshold=5 -o source/images/{**/,**/**/}*.jpg
   - bundle exec middleman build
   - bundle exec htmlproof --allow-hash-href --only-4xx ./build
 after_success:
