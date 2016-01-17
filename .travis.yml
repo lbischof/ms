@@ -17,4 +17,4 @@ after_success:
   - git config --global user.name ${GH_USER}
   - git config --global user.email ${GH_EMAIL}
   - git remote set-url origin "https://${GH_TOKEN}@github.com/lbischof/maplesplendor.ca.git"
-  - middleman deploy
+  - bundle exec middleman deploy
