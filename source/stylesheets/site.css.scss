@@ -232,11 +232,9 @@ button {
         margin-bottom: 5px;
     }
 }
-.links {
-    a:after {
-        content: "\a";
-        white-space: pre;
-    }
+.links h2 {
+    font-size: 1.1em;
+    margin-bottom: 0;
 }
 footer {
     border-top: 1px solid #e5e5e5;

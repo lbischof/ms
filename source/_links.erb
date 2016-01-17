@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Links</h1>
+    <% pdata.links.each do |title, links| %>
+        <h2><%= title %></h2>
+        <% links.each do |link, value| %>
+            <a href="<%= value %>" target="_blank"><%= link %></a><br>
+        <% end %>
+    <% end %>
+</div>
