@@ -10,8 +10,8 @@ addons:
     packages:
       - jpegoptim
 script:
-  - middleman build
-  - htmlproof --allow-hash-href --only-4xx ./build
+  - bundle exec middleman build
+  - bundle exec htmlproof --allow-hash-href --only-4xx ./build
 after_success:
   - echo ${GH_TOKEN} > ./.git/credentials
   - git config --global user.name ${GH_USER}
