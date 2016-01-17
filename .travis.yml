@@ -1,11 +1,20 @@
 language: ruby
 cache: bundler
 rvm:
-    - 2.2.1
+  - 2.2.1
 branches:
   only:
   - source # branch to build
+addons:
+  apt:
+    packages:
+      - jpegoptim
 script:
-- bundle exec rake travis:script
+  - middleman build
+  - htmlproof --allow-hash-href --only-4xx ./build
 after_success:
-- bundle exec rake travis:after_success
+  - echo ${GH_TOKEN} > ./.git/credentials
+  - git config --global user.name ${GH_USER}
+  - git config --global user.email ${GH_EMAIL}
+  - git remote set-url origin "https://${GH_TOKEN}@github.com/lbischof/maplesplendor.ca.git"
+  - middleman deploy
