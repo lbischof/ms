@@ -1,0 +1,9 @@
+---
+
+- title: Waldorf Schools in Canada - Maplesplendor
+  description: A list of Waldorf Schools in Canada from west to east.
+
+- partial: links
+  links:
+      British Columbia:
+          Sunrise Waldorf School: http://www.sunrisewaldorfschool.org
