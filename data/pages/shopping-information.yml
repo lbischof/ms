@@ -1,10 +1,13 @@
 ---
 
+- title: Shopping Information - Maplesplendor
+  description: Click all the colours you like, choose, compare and add them to the shopping cart with one click.
+
 - partial: markdown
   text_colour: "#3E70A5"
   markdown: |
     # Shopping information
-    Welcome to Maplesplendor's new website….a bit more simple, I hope you like it.
+    Welcome to Maplesplendor's new website... a bit more simple, I hope you like it.
     I really appreciate your feedback, any thoughts or questions?
 
     As most of you know we have been shipping from Europe for the last few years.
