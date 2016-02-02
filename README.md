@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/lbischof/maplesplendor.ca.svg?branch=master)](https://travis-ci.org/lbischof/maplesplendor.ca)
+[![Build Status](https://travis-ci.org/lbischof/ms.svg?branch=master)](https://travis-ci.org/lbischof/ms)
 
 # maplesplendor.ca
 
