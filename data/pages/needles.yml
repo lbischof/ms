@@ -16,8 +16,8 @@
     The hair from sheep is a sustainable, renewable resource, not to mention it's ability to keep you warm and dry.
     You can knit wool, weave wool or felt wool: wet felt it with soap and water or dry felt it with a felting needle or combine both methods.
 
-    When jabbed into wool the barbs catch and tangle the fibre sculpturing fine detail.
-    The gauge (diameter) for wool needles ranges from 32 (coarse) to 42 (super fine).
+    When jabbed into wool the barbs on the felting needle catch and tangle the fibre sculpturing fine detail.
+    The gauge (diameter) for wool felting needles ranges from 32 (coarse) to 42 (super fine).
     In general, start your project with a coarser needle and work to a finer needle for finishing.
     Choose thicker needles to felt coarse fibers and finer needles when working with finer fibers.
   colours:
@@ -50,7 +50,7 @@
   images: false
   banner: false
   description: |
-    Wizpick felting needles cover the whole range and will allow you to explore new techniques and ideas.
+    Wizpick felting needles cover the whole range of handcraft use and will allow you to explore new techniques and ideas.
     The best tools for the best results. More information is available on <a href="http://wizpick.com/en/dynamic" target="_blank">www.wizpick.com</a>
   colours:
       - Blue:
@@ -122,12 +122,12 @@
 - partial: markdown
   markdown: |
     Felting needles can also be used to join yarn, to mend holes in felted or knitted fabric, for rooting doll hair or to start or maintain dreadlocks.
-    Often wool is added to create a unique hairdo.
+    Often wool is added to dreadlocks to create a unique hairdo.
 
 - partial: markdown
   markdown: |
     # Needle Felting Sets
-    There are a few thousand different needles available for
+    There are a few thousand different felting needles available for
     specific industrial applications.
     Wizpick felting needles have been carefully selected to cover every
     handicraft use. Flowers on felted bead jewelry demand or need different
@@ -177,4 +177,3 @@
 
 - partial: html
   html: </div>
-
