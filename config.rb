@@ -16,7 +16,6 @@ set(
   :lax_spacing                  => true
 )
 
-
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -26,6 +25,10 @@ ignore 'page.html.erb'
 data.pages.each do |page, page_data|
      proxy_page = (page == 'index') ? 'index.html' : "/#{page}/index.html"
      proxy proxy_page, "/page.html", :layout => page_data[0].layout || 'layout', :locals => { page: page, page_data: page_data }, :ignore => true
+end
+
+data.redirects.each do |old_path, new_path|
+    redirect old_path, to: new_path
 end
 
 activate :automatic_image_sizes
