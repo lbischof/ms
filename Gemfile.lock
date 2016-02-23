@@ -1,5 +1,13 @@
 GIT
-  remote: https://github.com/middleman-contrib/middleman-deploy
+  remote: git://github.com/defeated/middleman-alias.git
+  revision: 05181a92816c337d92cd02f9f1e3711c881332fd
+  branch: middleman4
+  specs:
+    middleman-alias (0.0.16)
+      middleman-core (>= 3.3)
+
+GIT
+  remote: git://github.com/middleman-contrib/middleman-deploy.git
   revision: 243ab38b08896cd5a37d6845a01a5761b934a898
   specs:
     middleman-deploy (2.0.0.pre.alpha)
@@ -160,6 +168,7 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   middleman (>= 4.0.0)
+  middleman-alias!
   middleman-deploy!
   middleman-livereload
   middleman-minify-html
