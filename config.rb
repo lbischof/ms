@@ -2,7 +2,7 @@
 # Page options, layouts, aliases and proxies
 ###
 
-set :url_root, 'https://maplesplendor.ca'
+set :url_root, 'http://maplesplendor.ca'
 # Set markdown options
 set :markdown_engine, :redcarpet
 set(
