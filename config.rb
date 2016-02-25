@@ -35,6 +35,7 @@ activate :automatic_image_sizes
 set :relative_links, true
 activate :relative_assets
 activate :directory_indexes
+page "404.html", :directory_index => false
 
 # Build-specific configuration
 configure :build do
