@@ -1,0 +1,24 @@
+---
+
+- partial: homepage
+  image: homepageball.jpg
+  markdown: |
+      # Have you tried felting?
+      Isn't it amazing what you make with wool?<br>
+      We would like to encourage you to play with fibre.
+  button:
+      text: Endulge in colour
+      link: /wool/
+  secondary:
+      text: get the tools
+      link: /needles/
+
+- partial: markdown
+  markdown: |
+      # For 15 years we have been providing Canadians with colourful products and expert advice
+      Maplesplendor, a home based business located on Vancouver island, and yes we ship worldwide.
+      #15 years
+      It all started years ago in Nelson, BC. For young families, creativity can be soulsaving.
+      of sharing my passion, providing colourful products and expert advice
+      #Canadian
+      Sourcing many quality products in Europe, our home based business is now located on Vancouver island and yes we ship worldwide.

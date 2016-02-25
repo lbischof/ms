@@ -182,6 +182,27 @@ button {
     margin: auto;
     padding: 0 1em 2em;
 }
+
+.homepage {
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+    form {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .content {
+        position: relative;
+    }
+    .content:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+}
+
 .mals-multiple {
     margin: 0 auto 5em;
     max-width: 55em;
@@ -283,5 +304,37 @@ footer {
     }
     .banner {
         height: 130px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .homepage {
+        .content {
+            top: 50px;
+        }
+        img {
+            max-width: 200px;
+            float: right;
+        }
+    }
+}
+@media screen and (min-width: 750px) {
+    .homepage {
+        .content {
+            top: 100px;
+        }
+        img {
+            max-width: 300px;
+        }
+    }
+}
+@media screen and (min-width: 850px) {
+    .homepage {
+        .content {
+            top: 200px;
+        }
+        img {
+            max-width: 400px;
+        }
     }
 }
