@@ -11,7 +11,7 @@
             <%= markdown pdata.description %>
         </div>
     <% end %>
-    <form action="http://ww8.aitsafe.com/cf/add.cfm" method="post">
+    <form action="https://ww8.aitsafe.com/cf/add.cfm" method="post">
         <input type="hidden" name="userid" value="A4132041">
         <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
         <input type="hidden" name="price" value="<%= pdata[:price] %>">
