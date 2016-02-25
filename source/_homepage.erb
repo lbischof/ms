@@ -1,5 +1,5 @@
 <div class="homepage container"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
-<%= image_tag pdata.image if pdata.image %>
+<%= image_tag pdata.image, { :alt => 'Maplesplendor' } if pdata.image %>
 <div class="content">
 <%= markdown pdata.markdown %>
 <form method="get" action="<%= pdata.button.link %>">

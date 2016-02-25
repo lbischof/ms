@@ -2,6 +2,7 @@
 
 - partial: homepage
   image: homepageball.jpg
+  text_colour: "#BB2B23"
   markdown: |
       # Have you tried felting?
       Isn't it amazing what you make with wool?<br>
