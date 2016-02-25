@@ -2,9 +2,9 @@
 <%= image_tag pdata.image, { :alt => 'Maplesplendor' } if pdata.image %>
 <div class="content">
 <%= markdown pdata.markdown %>
-<form method="get" action="<%= pdata.button.link %>">
+<form method="get" action="<%= url_for pdata.button.link %>">
     <button type="submit"><%= pdata.button.text %></button>
 </form>
-<a href="<%= pdata.secondary.link %>"><%= pdata.secondary.text %></a>
+<a href="<%= url_for pdata.secondary.link %>"><%= pdata.secondary.text %></a>
 </div>
 </div>
