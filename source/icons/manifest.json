@@ -1,5 +1,6 @@
 {
 	"name": "Maplesplendor",
+    "theme_color": "#3E70A5",
 	"icons": [
 		{
 			"src": "\/icons\/android-chrome-36x36.png",
