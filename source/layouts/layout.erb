@@ -7,6 +7,7 @@
 
         <!-- Use title if it's in the page YAML frontmatter -->
         <title><%= page_data[0].title + " - " if defined? page_data[0].title %>Maplesplendor</title>
+        <%= "<meta name=\"description\" content=\""+ page_data[0].description + "\">" if defined? page_data[0].description %>
 
         <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
