@@ -36,6 +36,7 @@ set :relative_links, true
 activate :relative_assets
 activate :directory_indexes
 page "404.html", :directory_index => false
+page "google9818175e4e03fea8.html", :directory_index => false
 
 # Build-specific configuration
 configure :build do
