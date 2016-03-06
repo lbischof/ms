@@ -265,7 +265,17 @@ button {
 .feltsheet .colours {
     margin: 5px 4px;
 }
+.waldorf-schools {
+    .container div {
+        padding-top: 10px;
+        display: table;
+    }
+    .container div div {
+        display: table-cell;
+        padding-right: 40px;
+    }
 
+}
 .links h2 {
     font-size: 1.1em;
     margin-bottom: 0;
