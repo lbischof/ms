@@ -266,17 +266,21 @@ button {
     margin: 5px 4px;
 }
 .waldorf-schools {
+    .container {
+        color: #AE00AD;
+    }
     .container div {
         padding-top: 10px;
         display: table;
     }
     .container div div {
+        color: #3E70A5;
         display: table-cell;
         padding-right: 40px;
     }
 
 }
-.links h2 {
+.links h2, .waldorf-schools h2 {
     font-size: 1.1em;
     margin-bottom: 0;
 }
