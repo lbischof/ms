@@ -12,7 +12,7 @@ addons:
 script:
   - jpegoptim --max=80 --strip-all -T5 -o source/images/{**/,**/**/}*.jpg
   - bundle exec middleman build
-  - bundle exec htmlproof --allow-hash-href --only-4xx ./build
+  - bundle exec htmlproofer --allow-hash-href --only-4xx ./build
 after_success:
   - echo ${GH_TOKEN} > ./.git/credentials
   - git config --global user.name ${GH_USER}
