@@ -22,20 +22,17 @@
         <% if pdata.colours %>
             <% pdata.colours.each do |colour| %>
                 <%# Check if it's a hash %>
-                <% if colour.respond_to?(:each_pair) %>
-                    <% colour, options = colour.first %>
-                <% end %>
                 <div class="colours">
-                    <%= colour_image_tag(pdata.product, colour) if pdata.images %>
+                    <%= colour_image_tag(pdata.product, colour.name) if pdata.images %>
                     <%= "<label>" if not pdata.textboxes %>
-                        <input type="checkbox" name="product1[]" value="<%= colour %>">
+                        <input type="checkbox" name="product1[]" value="<%= colour.name %>">
                     <%= "<label>" if pdata.textboxes %>
-                        <span<%= " style=\"color: #{options.colour}\"" if options && options.colour %>><%= colour %></span>
-                        <% if options && options.gauge %>
-                            <%= options.gauge %>
+                        <span<%= " style=\"color: #{colour.text_colour}\"" if colour.text_colour %>><%= colour.name %></span>
+                        <% if colour.gauge %>
+                            <%= colour.gauge %>
                         <% end %>
-                        <% if options && options.usage %>
-                            <br><%= options.usage %>
+                        <% if colour.usage %>
+                            <br><%= colour.usage %>
                         <% end %>
                         <% if pdata.textboxes %>
                             <input type="number" min="1" name="product1[]">

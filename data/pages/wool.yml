@@ -16,55 +16,55 @@
     Corriedale makes a durable and hard wearing felt for toys when wet felted.
     Corriedale can be used as hair for puppets and to make mobiles because it never looks limp.
   colours:
-    - Green
-    - Lime
-    - Apple
-    - Mint
-    - Moss
-    - Forest
-    - Emerald
-    - Fir
-    - Ocean
-    - Aqua
-    - Bleu
-    - Ice
-    - Steel
-    - Indigo
-    - Ink
-    - Cobalt
-    - Blue
-    - Purple
-    - Lilac
-    - Plum
-    - Lavender
-    - Pink
-    - Raspberry
-    - Candy
-    - Strawberry
-    - Red
-    - Ruby
-    - Rose
-    - Oldrose
-    - Blush
-    - Lotion
-    - Flesh
-    - Apricot
-    - Honey
-    - Yellow
-    - Lemon
-    - Caramel
-    - Gold
-    - Tangerine
-    - Orange
-    - Autumn
-    - Toffee
-    - Rust
-    - Burnt
-    - Burgundy
-    - Brown
-    - Black
-    - Grey
-    - White
+    - name: Green
+    - name: Lime
+    - name: Apple
+    - name: Mint
+    - name: Moss
+    - name: Forest
+    - name: Emerald
+    - name: Fir
+    - name: Ocean
+    - name: Aqua
+    - name: Bleu
+    - name: Ice
+    - name: Steel
+    - name: Indigo
+    - name: Ink
+    - name: Cobalt
+    - name: Blue
+    - name: Purple
+    - name: Lilac
+    - name: Plum
+    - name: Lavender
+    - name: Pink
+    - name: Raspberry
+    - name: Candy
+    - name: Strawberry
+    - name: Red
+    - name: Ruby
+    - name: Rose
+    - name: Oldrose
+    - name: Blush
+    - name: Lotion
+    - name: Flesh
+    - name: Apricot
+    - name: Honey
+    - name: Yellow
+    - name: Lemon
+    - name: Caramel
+    - name: Gold
+    - name: Tangerine
+    - name: Orange
+    - name: Autumn
+    - name: Toffee
+    - name: Rust
+    - name: Burnt
+    - name: Burgundy
+    - name: Brown
+    - name: Black
+    - name: Grey
+    - name: White
   radios:
     - name: 20 grams
       price: 2.2
@@ -84,30 +84,30 @@
     European Merino is longer in staple length with new possibilities.
     We love these subtle colours.
   colours:
-    - Aquamarine
-    - Grass
-    - Kiwi
-    - Brassed
-    - Flax
-    - Newskin
-    - Skin
-    - Baby
-    - Camel
-    - Chocolate
-    - Metal
-    - Mouse
-    - Bronze
-    - Water
-    - Powder
-    - Royal
-    - Ultramarine
-    - Rubarbpie
-    - Cookedrubarb
-    - Cherry
-    - Wine
-    - Mauve
-    - Grape
-    - Magenta
+    - name: Aquamarine
+    - name: Grass
+    - name: Kiwi
+    - name: Brassed
+    - name: Flax
+    - name: Newskin
+    - name: Skin
+    - name: Baby
+    - name: Camel
+    - name: Chocolate
+    - name: Metal
+    - name: Mouse
+    - name: Bronze
+    - name: Water
+    - name: Powder
+    - name: Royal
+    - name: Ultramarine
+    - name: Rubarbpie
+    - name: Cookedrubarb
+    - name: Cherry
+    - name: Wine
+    - name: Mauve
+    - name: Grape
+    - name: Magenta
   radios:
     - name: 20 grams
       price: 2.2
@@ -128,57 +128,57 @@
     With the proper felting needle Merino can be delicately molded without single hairs protruding.
     For needle felting fine fibres we recommend our [Merino](/needles/) felting needle set.
   colours:
-    - Tuna
-    - Coral
-    - Salmon
-    - Hottuna
-    - Pumpkin
-    - Scarlet
-    - Crimson
-    - Darkcrimson
-    - Rubarb
-    - Elderberry
-    - Magenta
-    - Grapejelly
-    - Floss
-    - Babygirl
-    - Violet
-    - Iris
-    - Crocus
-    - Amethyst
-    - Navy
-    - Blueberry
-    - Royal
-    - Saphire
-    - Lake
-    - Turquoiseblue
-    - Sea
-    - Turquoisegreen
-    - Teal
-    - Pine
-    - Malachit
-    - Sage
-    - Asparagus
-    - Lawn
-    - Pomme
-    - Olive
-    - Spinach
-    - Brass
-    - Wasp
-    - Eggyolk
-    - Egg
-    - Straw
-    - Milk
-    - Cream
-    - Face
-    - Peach
-    - Tan
-    - Sienna
-    - Darktan
-    - Mocca
-    - Coal
-    - Slate
-    - Stone
+    - name: Tuna
+    - name: Coral
+    - name: Salmon
+    - name: Hottuna
+    - name: Pumpkin
+    - name: Scarlet
+    - name: Crimson
+    - name: Darkcrimson
+    - name: Rubarb
+    - name: Elderberry
+    - name: Magenta
+    - name: Grapejelly
+    - name: Floss
+    - name: Babygirl
+    - name: Violet
+    - name: Iris
+    - name: Crocus
+    - name: Amethyst
+    - name: Navy
+    - name: Blueberry
+    - name: Royal
+    - name: Saphire
+    - name: Lake
+    - name: Turquoiseblue
+    - name: Sea
+    - name: Turquoisegreen
+    - name: Teal
+    - name: Pine
+    - name: Malachit
+    - name: Sage
+    - name: Asparagus
+    - name: Lawn
+    - name: Pomme
+    - name: Olive
+    - name: Spinach
+    - name: Brass
+    - name: Wasp
+    - name: Eggyolk
+    - name: Egg
+    - name: Straw
+    - name: Milk
+    - name: Cream
+    - name: Face
+    - name: Peach
+    - name: Tan
+    - name: Sienna
+    - name: Darktan
+    - name: Mocca
+    - name: Coal
+    - name: Slate
+    - name: Stone
   radios:
     - name: 20 grams
       price: 2.2
@@ -197,13 +197,13 @@
     very shiny, silky, smooth, and soft. Try it fluffed up for hairdos or wetfelted together with Merino for fabric texture.
     It attaches best to other fibres with our [Cream](/needles/) felting needle.
   colours:
-    - Aqua
-    - Green
-    - Turquoise
-    - Multi
-    - Purple
-    - Red
-#   - Grey
+    - name: Aqua
+    - name: Green
+    - name: Turquoise
+    - name: Multi
+    - name: Purple
+    - name: Red
+#   - name: Grey
   radios:
     - name: 20 grams
       price: 4.4
@@ -221,31 +221,31 @@
     Big companies use chemicals to dissolve the vegetable matter.
     Our locks are hand dyed on the farm and are not carded in order to not disturb the curls.
   colours:
-    - Yellow
-    - Lime
-    - Lightgreen
-    - Green
-    - Darkgreen
-    - Blue
-    - Jeans
-    - Steel
-    - Blueviolet
-    - Purple
-    - Violet
-    - Pink
-    - Hotpink
-    - Red
-    - Apricot
-    - Auburn
-    - Amber
-    - Carrot
-    - Darkbrown
-    - Foxred
-    - Honey
-    - Lightorange
-    - Orange
-    - Grey
-    - Black
+    - name: Yellow
+    - name: Lime
+    - name: Lightgreen
+    - name: Green
+    - name: Darkgreen
+    - name: Blue
+    - name: Jeans
+    - name: Steel
+    - name: Blueviolet
+    - name: Purple
+    - name: Violet
+    - name: Pink
+    - name: Hotpink
+    - name: Red
+    - name: Apricot
+    - name: Auburn
+    - name: Amber
+    - name: Carrot
+    - name: Darkbrown
+    - name: Foxred
+    - name: Honey
+    - name: Lightorange
+    - name: Orange
+    - name: Grey
+    - name: Black
   radios:
     - name: 20 grams
       price: 4.4
