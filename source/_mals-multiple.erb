@@ -49,8 +49,8 @@
                 <%# radios is an array of single hashes %>
                 <% pdata.radios.each_with_index do |radio, index| %>
                     <label>
-                        <input name="productpr1" type="<%= pdata.radios.length == 1 ? "hidden" : "radio" %>" value="<%= pdata[:product] %>, <%= "%s :%s" % radio.first %>"<%= " checked" if pdata.radios.length == 1 or index == 1 %>>
-                        <%= radio.keys.first %> <%= number_to_currency(radio.values.first, :unit => "$").sub(/\.00$/, '.-') %>
+                    <input name="productpr1" type="<%= pdata.radios.length == 1 ? "hidden" : "radio" %>" value="<%= pdata[:product] %>, <%= radio.name %> :<%= radio.price %>"<%= " checked" if pdata.radios.length == 1 or index == 1 %>>
+                        <%= radio.name %> <%= number_to_currency(radio.price, :unit => "$").sub(/\.00$/, '.-') %>
                     </label>
                 <% end %>
             <% else %>

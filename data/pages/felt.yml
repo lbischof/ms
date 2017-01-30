@@ -97,5 +97,7 @@
     - "79"
     - "91 (natural)"
   radios:
-    - 20 by 30cm: 2.9
-    - 30 by 40cm: 5.9
+    - name: 20 by 30cm
+      price: 2.9
+    - name: 30 by 40cm
+      price: 5.9

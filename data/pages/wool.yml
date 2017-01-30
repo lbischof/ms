@@ -66,9 +66,12 @@
     - Grey
     - White
   radios:
-    - 20 grams: 2.2
-    - 50 grams: 5
-    - 100 grams: 9.5
+    - name: 20 grams
+      price: 2.2
+    - name: 50 grams
+      price: 5
+    - name: 100 grams
+      price: 9.5
 
 
 - partial: mals-multiple
@@ -106,9 +109,12 @@
     - Grape
     - Magenta
   radios:
-    - 20 grams: 2.2
-    - 50 grams: 5
-    - 100 grams: 9.5
+    - name: 20 grams
+      price: 2.2
+    - name: 50 grams
+      price: 5
+    - name: 100 grams
+      price: 9.5
 
 - partial: mals-multiple
   product: Merino
@@ -174,9 +180,12 @@
     - Slate
     - Stone
   radios:
-    - 20 grams: 2.2
-    - 50 grams: 5
-    - 100 grams: 9.5
+    - name: 20 grams
+      price: 2.2
+    - name: 50 grams
+      price: 5
+    - name: 100 grams
+      price: 9.5
 
 - partial: mals-multiple
   product: Mohairroving
@@ -196,8 +205,10 @@
     - Red
 #   - Grey
   radios:
-    - 20 grams: 4.4
-    - 50 grams: 10
+    - name: 20 grams
+      price: 4.4
+    - name: 50 grams
+      price: 10
 
 - partial: mals-multiple
   product: Mohairlocks
@@ -236,6 +247,9 @@
     - Grey
     - Black
   radios:
-    - 20 grams: 4.4
-    - 50 grams: 10
-    - 100 grams: 19.5
+    - name: 20 grams
+      price: 4.4
+    - name: 50 grams
+      price: 10
+    - name: 100 grams
+      price: 19.5

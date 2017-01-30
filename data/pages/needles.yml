@@ -42,7 +42,8 @@
           usage: Reverse
           colour: ""
   radios:
-    - Price group one: 1.8
+    - name: Price group one
+      price: 1.8
 
 - partial: mals-multiple
   product: Wizpick Felting Needles
@@ -82,7 +83,8 @@
           usage: Merino
           colour: "#EEDA84"
   radios:
-    - Price group two: 2.1
+    - name: Price group two
+      price: 2.1
 
 - partial: mals-multiple
   product: Wizpick Felting Needles
@@ -117,7 +119,8 @@
           usage: like Gilt
           colour: ""
   radios:
-    - Price group three: 2.6
+    - name: Price group three
+      price: 2.6
 
 - partial: markdown
   markdown: |
