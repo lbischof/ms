@@ -1,3 +1,6 @@
 prose:
   rooturl: 'data/pages'
   media: 'source/images'
+jsoneditor:
+  - path: 'data/pages/.*yml'
+    schema: schema.json
