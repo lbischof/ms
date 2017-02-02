@@ -1,8 +1,8 @@
 ---
-
-- title: Canadian source for felting fibre and needles
+page:
+  title: Canadian source for felting fibre and needles
   description: Isn't it amazing what you can make with wool? We would like to encourage you to play with fibre.
-
+content:
 - partial: homepage
   image: homepageball.jpg
   text_colour: "#BB2B23"

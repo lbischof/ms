@@ -22,9 +22,9 @@ configure :development do
 end
 
 ignore 'page.html.erb'
-data.pages.each do |page, page_data|
+data.pages.each do |page,data|
      proxy_page = (page == 'index') ? 'index.html' : "/#{page}/index.html"
-     proxy proxy_page, "/page.html", :layout => page_data[0].layout || 'layout', :locals => { page: page, page_data: page_data }, :ignore => true
+     proxy proxy_page, "/page.html", :layout => 'layout', :locals => { page: data.page, page_data: data.content }, :ignore => true
 end
 
 data.redirects.each do |old_path, new_path|

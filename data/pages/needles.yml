@@ -1,8 +1,8 @@
 ---
-
-- title: Wizpick colour-coded Felting Needles
+page:
+  title: Wizpick colour-coded Felting Needles
   description: Sixteen different felting needles for every handcraft use. Try them all or order your favorites seperately. For fine fibres choose the Merino Set.
-
+content:
 - partial: mals-multiple
   product: Wizpick Felting Needles
   textboxes: true

@@ -6,8 +6,8 @@
         <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
         <!-- Use title if it's in the page YAML frontmatter -->
-        <title><%= page_data[0].title + " - " if defined? page_data[0].title %><%= current_page.data.title + " - " if defined? current_page.data.title %>Maplesplendor</title>
-        <%= "<meta name=\"description\" content=\""+ page_data[0].description + "\">" if defined? page_data[0].description %>
+        <title><%= page.title + " - " if defined? page.title %><%= current_page.data.title + " - " if defined? current_page.data.title %>Maplesplendor</title>
+        <%= "<meta name=\"description\" content=\""+ page.description + "\">" if defined? page.description %>
         <%= "<meta name=\"description\" content=\""+ current_page.data.description + "\">" if defined? current_page.data.description %>
 
         <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>

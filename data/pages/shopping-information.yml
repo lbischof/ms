@@ -1,8 +1,8 @@
 ---
-
-- title: Shopping Information
+page:
+  title: Shopping Information
   description: Click all the colours you like, choose, compare and add them to the shopping cart with one click.
-
+content:
 - partial: markdown
   text_colour: "#3E70A5"
   markdown: |

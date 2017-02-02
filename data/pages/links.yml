@@ -1,8 +1,8 @@
 ---
-
-- title: Links to Anthroposophy
+page:
+  title: Links to Anthroposophy
   description: A collection of Anthroposophical Initiatives in Canada and Worldwide.
-
+content:
 - partial: links
   title: Links
   links:
