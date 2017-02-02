@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "options": {
+        "disable_collapse": true
+    },
+    "properties": {
+        "config": {
+            "type": "object",
+            "options": {
+                "hidden": true
+            },
+            "properties": {
+                "path": {
+                    "type": "string"
+                },
+                "repo": {
+                    "type": "string"
+                }
+            }
+        },
+        "page": {
+            "type": "object",
+            "options": {
+                "disable_collapse": true
+            },
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            }
+        },
+        "content": {
+            "type": "array",
+            "options": {
+                "disable_collapse": true
+            },
+            "items": {
+                "headerTemplate": "{{self.product}}",
+                "type": "object",
+                "properties": {
+                    "partial": {
+                        "type": "string",
+                        "options": {
+                            "hidden": true
+                        }
+                    }
+                },
+                "oneOf": [
+                    {
+                        "title": "Mals Multiple",
+                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/mals-multiple.json"
+                    },
+                    {
+                        "title": "Mals Single",
+                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/mals-single.json"
+                    }
+                ]
+            }
+        }
+    }
+}
