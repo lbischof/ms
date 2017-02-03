@@ -3,4 +3,4 @@ prose:
   media: 'source/images'
 jsoneditor:
   - path: 'data/pages/.*yml'
-    schema: 'https://raw.githubusercontent.com/lbischof/ms/source/schema/schema.json'
+    schema: 'schema/schema.json'
