@@ -40,16 +40,14 @@
                     "collapsed": true
                 },
                 "properties": {
-                    "name": {
-                        "type": "string",
-                        "links": [{
-                            "href": "/test/{{self}}.jpg",
-                            "mediaType": "image/jpeg"
-                        }]
+                    "hide": {
+                        "type": "boolean",
+                        "format": "checkbox"
                     },
-                    "gauge": {
-                        "type": "string"
-                    }
+                    "name": { "type": "string" },
+                    "gauge": { "type": "string" },
+                    "usage": { "type": "string" },
+                    "text_colour": { "type": "string" }
                 },
                 "required": ["name"],
                 "defaultProperties": ["name"]
