@@ -11,6 +11,11 @@
             "type": "string",
             "title": "Product"
         },
+        "hide": {
+            "type": "boolean",
+            "title": "Hide",
+            "format": "checkbox"
+        },
         "banner": {
             "type": "boolean",
             "title": "Banner",
@@ -50,7 +55,7 @@
                     "text_colour": { "type": "string" }
                 },
                 "required": ["name"],
-                "defaultProperties": ["name"]
+                "defaultProperties": ["name","hide"]
             }
         },
         "radios": {

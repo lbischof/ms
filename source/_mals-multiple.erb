@@ -9,57 +9,60 @@
 <% end %>
 <% pdata.images = true if not defined? pdata.images %>
 
-<%= banner_image_tag pdata[:product] if pdata.banner %>
-<section class="mals-multiple<%= " #{sanitize pdata.product}" if pdata.product %><%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
-    <% if pdata.description %>
-        <div class="description">
-            <%= markdown pdata.description %>
-        </div>
-    <% end %>
-    <form action="https://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
-        <input type="hidden" name="userid" value="A4132041">
-        <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
-        <% if pdata.colours %>
-            <% pdata.colours.each do |colour| %>
-                <%# Check if it's a hash %>
-                <div class="colours">
-                    <%= colour_image_tag(pdata.product, colour.name) if pdata.images %>
-                    <%= "<label>" if not pdata.textboxes %>
-                        <input type="checkbox" name="product1[]" value="<%= colour.name %>">
-                    <%= "<label>" if pdata.textboxes %>
-                        <span<%= " style=\"color: #{colour.text_colour}\"" if colour.text_colour %>><%= colour.name %></span>
-                        <% if colour.gauge %>
-                            <%= colour.gauge %>
-                        <% end %>
-                        <% if colour.usage %>
-                            <br><%= colour.usage %>
-                        <% end %>
-                        <% if pdata.textboxes %>
-                            <input type="number" min="1" name="product1[]">
-                        <% end %>
-                    </label>
-                </div>
-            <% end %>
+<% unless pdata.hide %>
+    <%= banner_image_tag pdata[:product] if pdata.banner %>
+    <section class="mals-multiple<%= " #{sanitize pdata.product}" if pdata.product %><%= " textboxes" if pdata.textboxes %>"<%= " style=\"color: #{pdata.text_colour}\"" if pdata.text_colour %>>
+        <% if pdata.description %>
+            <div class="description">
+                <%= markdown pdata.description %>
+            </div>
         <% end %>
-        <div class="radios">
-            <% if pdata.radios %>
-                <%# radios is an array of single hashes %>
-                <% pdata.radios.each_with_index do |radio, index| %>
-                    <label>
-                    <input name="productpr1" type="<%= pdata.radios.length == 1 ? "hidden" : "radio" %>" value="<%= pdata[:product] %>, <%= radio.name %> :<%= radio.price %>"<%= " checked" if pdata.radios.length == 1 or index == 1 %>>
-                        <%= radio.name %> <%= number_to_currency(radio.price, :unit => "$").sub(/\.00$/, '.-') %>
-                    </label>
+        <form action="https://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
+            <input type="hidden" name="userid" value="A4132041">
+            <input type="hidden" name="return" value="<%= config.url_root %><%= current_page.url %>">
+            <% if pdata.colours %>
+                <% pdata.colours.each do |colour| %>
+                    <%# Check if it's a hash %>
+                    <% next if colour.hide %>
+                    <div class="colours">
+                        <%= colour_image_tag(pdata.product, colour.name) if pdata.images %>
+                        <%= "<label>" if not pdata.textboxes %>
+                            <input type="checkbox" name="product1[]" value="<%= colour.name %>">
+                            <%= "<label>" if pdata.textboxes %>
+                                <span<%= " style=\"color: #{colour.text_colour}\"" if colour.text_colour %>><%= colour.name %></span>
+                                <% if colour.gauge %>
+                                    <%= colour.gauge %>
+                                <% end %>
+                                <% if colour.usage %>
+                                    <br><%= colour.usage %>
+                            <% end %>
+                            <% if pdata.textboxes %>
+                                <input type="number" min="1" name="product1[]">
+                            <% end %>
+                            </label>
+                    </div>
                 <% end %>
-            <% else %>
-                <input type="hidden" name="productpr1" value="<%= pdata[:product] %>, :<%= pdata[:price] %>">
             <% end %>
-            <input type="hidden" name="noqty1" value="1">
-            <input type="hidden" name="qty1">
-            <noscript>
-                <p>Please add up how many total: <input type="number" name="qty1"></p>
-            </noscript>
+            <div class="radios">
+                <% if pdata.radios %>
+                    <%# radios is an array of single hashes %>
+                    <% pdata.radios.each_with_index do |radio, index| %>
+                        <label>
+                            <input name="productpr1" type="<%= pdata.radios.length == 1 ? "hidden" : "radio" %>" value="<%= pdata[:product] %>, <%= radio.name %> :<%= radio.price %>"<%= " checked" if pdata.radios.length == 1 or index == 1 %>>
+                            <%= radio.name %> <%= number_to_currency(radio.price, :unit => "$").sub(/\.00$/, '.-') %>
+                        </label>
+                    <% end %>
+                <% else %>
+                    <input type="hidden" name="productpr1" value="<%= pdata[:product] %>, :<%= pdata[:price] %>">
+                <% end %>
+                <input type="hidden" name="noqty1" value="1">
+                <input type="hidden" name="qty1">
+                <noscript>
+                    <p>Please add up how many total: <input type="number" name="qty1"></p>
+                </noscript>
 
-            <button>Cart</button>
-        </div>
-    </form>
-</section>
+                <button>Cart</button>
+            </div>
+        </form>
+    </section>
+<% end %>
