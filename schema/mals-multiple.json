@@ -36,7 +36,8 @@
                 "type": "object",
                 "format": "grid",
                 "options": {
-                    "disable_properties": false
+                    "disable_properties": false,
+                    "collapsed": true
                 },
                 "properties": {
                     "name": {
@@ -64,6 +65,9 @@
                 "headerTemplate": "{{self.name}} : {{self.price}}",
                 "type": "object",
                 "format": "grid",
+                "options": {
+                    "collapsed": true
+                },
                 "properties": {
                     "name": {
                         "type": "string",
