@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "options": {
+        "keep_oneof_values": false
+    },
+    "properties": {
+        "partial": {
+            "type": "string",
+            "enum": ["html"],
+            "options": {
+                "hidden": true
+            }
+        },
+        "html": {
+            "type": "string",
+            "title": "HTML",
+            "format": "textarea"
+        }
+    }
+}

@@ -66,6 +66,10 @@
                         "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/markdown.json"
                     },
                     {
+                        "title": "HTML",
+                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/html.json"
+                    },
+                    {
                         "title": "Links",
                         "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/links.json"
                     }
