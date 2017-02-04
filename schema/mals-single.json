@@ -1,5 +1,5 @@
 {
-    "additionalProperties": false,
+    "type": "object",
     "properties": {
         "partial": {
             "type": "string",
@@ -16,9 +16,5 @@
             "type": "boolean",
             "title": "Banner"
         }
-    },
-    "type": "object",
-    "options": {
-        "keep_oneof_values": false
     }
 }

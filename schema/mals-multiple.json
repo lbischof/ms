@@ -1,4 +1,5 @@
 {
+    "type": "object",
     "properties": {
         "partial": {
             "type": "string",
@@ -95,9 +96,5 @@
                 }
             }
         }
-    },
-    "type": "object",
-    "options": {
-        "keep_oneof_values": false
     }
 }
