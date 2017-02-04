@@ -1,25 +1,16 @@
 page:
   title: 100% Wool Felt Dyed Oekotex 100
-  description: >-
-    Almost 80 different colours. This 1mm thick felt doesn't frey or tear.
-    Available in two sizes.
+  description: Almost 80 different colours. This 1mm thick felt doesn't frey or tear. Available in two sizes.
 content:
   - partial: mals-multiple
     product: Felt sheet
     banner: true
     text_colour: '#BB2B23'
-    description: >
+    description: |
       # Felt
-
-      Made of pure new wool, our craft weight 100% wool felt is 1mm thick and
-      certified Oeko Tex 100, so it is safe for children.
-
-      Wool felt is naturally nonflammable, dirt repellant and does not frey or
-      tear.
-
-      The raw wool comes mainly from Australia, but all steps of the production
-      process take place in Western Europe.
-
+      Made of pure new wool, our craft weight 100% wool felt is 1mm thick and certified Oeko Tex 100, so it is safe for children.
+      Wool felt is naturally nonflammable, dirt repellant and does not frey or tear.
+      The raw wool comes mainly from Australia, but all steps of the production process take place in Western Europe.
 
       Up to 11 pieces of Felt can ship in an envelope.
     colours:
