@@ -21,6 +21,17 @@
             "title": "Banner",
             "format": "checkbox"
         },
+        "textboxes": {
+            "type": "boolean",
+            "title": "Textboxes",
+            "format": "checkbox"
+        },
+        "images": {
+            "type": "boolean",
+            "title": "Images",
+            "format": "checkbox",
+            "default": true
+        },
         "text_colour": {
             "type": "string",
             "title": "Text colour"
