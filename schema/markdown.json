@@ -1,0 +1,28 @@
+{
+    "type": "object",
+    "options": {
+        "keep_oneof_values": false
+    },
+    "properties": {
+        "partial": {
+            "type": "string",
+            "enum": ["markdown"],
+            "options": {
+                "hidden": true
+            }
+        },
+        "text_colour": {
+            "type": "string",
+            "title": "Text colour"
+        },
+        "banner": {
+            "type": "string",
+            "title": "Banner"
+        },
+        "markdown": {
+            "type": "string",
+            "title": "Markdown",
+            "format": "textarea"
+        }
+    }
+}
