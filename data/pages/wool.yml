@@ -1,257 +1,249 @@
----
 page:
   title: Colourful felting fibres
   description: More than a hundred colours to choose from. Find the suitable fibre for your felting project. Merino is finer than Corriedale. Mohairlocks in many colours.
-
 content:
-- partial: mals-multiple
-  product: Corriedale
-  banner: true
-  text_colour: "#3E70A5"
-  description: |
-    # Corriedale
-    Corriedale is courser wool (about 30 microns) and is preferred for needle felting simply because it is easier.
-    We recommend our [Mauve](/needles/) felting needle for children.
+  - partial: mals-multiple
+    product: Corriedale
+    banner: true
+    text_colour: '#3E70A5'
+    description: |
+      # Corriedale
+      Corriedale is courser wool (about 30 microns) and is preferred for needle felting simply because it is easier.
+      We recommend our [Mauve](/needles/) felting needle for children.
 
-    Corriedale was crossbred between Merino ewes and Lincoln or Leichester male sheep in Australia and New Zealand in the 20th century.
-    Middle length Corriedale fibre can easily be ripped shorter or tussled up.
-    Corriedale makes a durable and hard wearing felt for toys when wet felted.
-    Corriedale can be used as hair for puppets and to make mobiles because it never looks limp.
-  colours:
-    - name: Green
-    - name: Lime
-    - name: Apple
-    - name: Mint
-    - name: Moss
-    - name: Forest
-    - name: Emerald
-    - name: Fir
-    - name: Ocean
-    - name: Aqua
-    - name: Bleu
-    - name: Ice
-    - name: Steel
-    - name: Indigo
-    - name: Ink
-    - name: Cobalt
-    - name: Blue
-    - name: Purple
-    - name: Lilac
-    - name: Plum
-    - name: Lavender
-    - name: Pink
-    - name: Raspberry
-    - name: Candy
-    - name: Strawberry
-    - name: Red
-    - name: Ruby
-    - name: Rose
-    - name: Oldrose
-    - name: Blush
-    - name: Lotion
-    - name: Flesh
-    - name: Apricot
-    - name: Honey
-    - name: Yellow
-    - name: Lemon
-    - name: Caramel
-    - name: Gold
-    - name: Tangerine
-    - name: Orange
-    - name: Autumn
-    - name: Toffee
-    - name: Rust
-    - name: Burnt
-    - name: Burgundy
-    - name: Brown
-    - name: Black
-    - name: Grey
-    - name: White
-  radios:
-    - name: 20 grams
-      price: 2.2
-    - name: 50 grams
-      price: 5
-    - name: 100 grams
-      price: 9.5
-
-
-- partial: mals-multiple
-  product: EuropeanMerino
-  banner: false
-  text_colour: "#9A4356"
-  description: |
-    # European Merino
-    European Merino is courser (more like Corriedale) but felts like Merino.
-    European Merino is longer in staple length with new possibilities.
-    We love these subtle colours.
-  colours:
-    - name: Aquamarine
-    - name: Grass
-    - name: Kiwi
-    - name: Brassed
-    - name: Flax
-    - name: Newskin
-    - name: Skin
-    - name: Baby
-    - name: Camel
-    - name: Chocolate
-    - name: Metal
-    - name: Mouse
-    - name: Bronze
-    - name: Water
-    - name: Powder
-    - name: Royal
-    - name: Ultramarine
-    - name: Rubarbpie
-    - name: Cookedrubarb
-    - name: Cherry
-    - name: Wine
-    - name: Mauve
-    - name: Grape
-    - name: Magenta
-  radios:
-    - name: 20 grams
-      price: 2.2
-    - name: 50 grams
-      price: 5
-    - name: 100 grams
-      price: 9.5
-
-- partial: mals-multiple
-  product: Merino
-  banner: true
-  text_colour: "#396516"
-  description: |
-    # Merino
-    Merino shrinks about one third, less the thinner it is applied.
-    This very soft and fine wool is wonderful to work with. Details are more accurate than with other types of wool.
-    Merino is the best wool for Nuno Felting on silk or cotton gauze.
-    With the proper felting needle Merino can be delicately molded without single hairs protruding.
-    For needle felting fine fibres we recommend our [Merino](/needles/) felting needle set.
-  colours:
-    - name: Tuna
-    - name: Coral
-    - name: Salmon
-    - name: Hottuna
-    - name: Pumpkin
-    - name: Scarlet
-    - name: Crimson
-    - name: Darkcrimson
-    - name: Rubarb
-    - name: Elderberry
-    - name: Magenta
-    - name: Grapejelly
-    - name: Floss
-    - name: Babygirl
-    - name: Violet
-    - name: Iris
-    - name: Crocus
-    - name: Amethyst
-    - name: Navy
-    - name: Blueberry
-    - name: Royal
-    - name: Saphire
-    - name: Lake
-    - name: Turquoiseblue
-    - name: Sea
-    - name: Turquoisegreen
-    - name: Teal
-    - name: Pine
-    - name: Malachit
-    - name: Sage
-    - name: Asparagus
-    - name: Lawn
-    - name: Pomme
-    - name: Olive
-    - name: Spinach
-    - name: Brass
-    - name: Wasp
-    - name: Eggyolk
-    - name: Egg
-    - name: Straw
-    - name: Milk
-    - name: Cream
-    - name: Face
-    - name: Peach
-    - name: Tan
-    - name: Sienna
-    - name: Darktan
-    - name: Mocca
-    - name: Coal
-    - name: Slate
-    - name: Stone
-  radios:
-    - name: 20 grams
-      price: 2.2
-    - name: 50 grams
-      price: 5
-    - name: 100 grams
-      price: 9.5
-
-- partial: mals-multiple
-  product: Mohairroving
-  banner: true
-  text_colour: "#0F7A82"
-  description: |
-    # Mohair Roving
-    This high quality 100% mohair roving is
-    very shiny, silky, smooth, and soft. Try it fluffed up for hairdos or wetfelted together with Merino for fabric texture.
-    It attaches best to other fibres with our [Cream](/needles/) felting needle.
-  colours:
-    - name: Aqua
-    - name: Green
-    - name: Turquoise
-    - name: Multi
-    - name: Purple
-    - name: Red
-#   - name: Grey
-  radios:
-    - name: 20 grams
-      price: 4.4
-    - name: 50 grams
-      price: 10
-
-- partial: mals-multiple
-  product: Mohairlocks
-  banner: false
-  text_colour: "#D43026"
-  description: |
-    # Mohairlocks
-    Hand dyed Kidmohairlocks are great for hair or beards. Goat's hair has a light shine.
-    Sometimes there are little bits of straw or grass included. This means that the goats have a natural life.
-    Big companies use chemicals to dissolve the vegetable matter.
-    Our locks are hand dyed on the farm and are not carded in order to not disturb the curls.
-  colours:
-    - name: Yellow
-    - name: Lime
-    - name: Lightgreen
-    - name: Green
-    - name: Darkgreen
-    - name: Blue
-    - name: Jeans
-    - name: Steel
-    - name: Blueviolet
-    - name: Purple
-    - name: Violet
-    - name: Pink
-    - name: Hotpink
-    - name: Red
-    - name: Apricot
-    - name: Auburn
-    - name: Amber
-    - name: Carrot
-    - name: Darkbrown
-    - name: Foxred
-    - name: Honey
-    - name: Lightorange
-    - name: Orange
-    - name: Grey
-    - name: Black
-  radios:
-    - name: 20 grams
-      price: 4.4
-    - name: 50 grams
-      price: 10
-    - name: 100 grams
-      price: 19.5
+      Corriedale was crossbred between Merino ewes and Lincoln or Leichester male sheep in Australia and New Zealand in the 20th century.
+      Middle length Corriedale fibre can easily be ripped shorter or tussled up.
+      Corriedale makes a durable and hard wearing felt for toys when wet felted.
+      Corriedale can be used as hair for puppets and to make mobiles because it never looks limp.
+    colours:
+      - name: Green
+      - name: Lime
+      - name: Apple
+      - name: Mint
+      - name: Moss
+      - name: Forest
+      - name: Emerald
+      - name: Fir
+      - name: Ocean
+      - name: Aqua
+      - name: Bleu
+      - name: Ice
+      - name: Steel
+      - name: Indigo
+      - name: Ink
+      - name: Cobalt
+      - name: Blue
+      - name: Purple
+      - name: Lilac
+      - name: Plum
+      - name: Lavender
+      - name: Pink
+      - name: Raspberry
+      - name: Candy
+      - name: Strawberry
+      - name: Red
+      - name: Ruby
+      - name: Rose
+      - name: Oldrose
+      - name: Blush
+      - name: Lotion
+      - name: Flesh
+      - name: Apricot
+      - name: Honey
+      - name: Yellow
+      - name: Lemon
+      - name: Caramel
+      - name: Gold
+      - name: Tangerine
+      - name: Orange
+      - name: Autumn
+      - name: Toffee
+      - name: Rust
+      - name: Burnt
+      - name: Burgundy
+      - name: Brown
+      - name: Black
+      - name: Grey
+      - name: White
+    radios:
+      - name: 20 grams
+        price: 2.2
+      - name: 50 grams
+        price: 5
+      - name: 100 grams
+        price: 9.5
+  - partial: mals-multiple
+    product: EuropeanMerino
+    text_colour: '#9A4356'
+    description: |
+      # European Merino
+      European Merino is courser (more like Corriedale) but felts like Merino.
+      European Merino is longer in staple length with new possibilities.
+      We love these subtle colours.
+    colours:
+      - name: Aquamarine
+      - name: Grass
+      - name: Kiwi
+      - name: Brassed
+      - name: Flax
+      - name: Newskin
+      - name: Skin
+      - name: Baby
+      - name: Camel
+      - name: Chocolate
+      - name: Metal
+      - name: Mouse
+      - name: Bronze
+      - name: Water
+      - name: Powder
+      - name: Royal
+      - name: Ultramarine
+      - name: Rubarbpie
+      - name: Cookedrubarb
+      - name: Cherry
+      - name: Wine
+      - name: Mauve
+      - name: Grape
+      - name: Magenta
+    radios:
+      - name: 20 grams
+        price: 2.2
+      - name: 50 grams
+        price: 5
+      - name: 100 grams
+        price: 9.5
+  - partial: mals-multiple
+    product: Merino
+    banner: true
+    text_colour: '#396516'
+    description: |
+      # Merino
+      Merino shrinks about one third, less the thinner it is applied.
+      This very soft and fine wool is wonderful to work with. Details are more accurate than with other types of wool.
+      Merino is the best wool for Nuno Felting on silk or cotton gauze.
+      With the proper felting needle Merino can be delicately molded without single hairs protruding.
+      For needle felting fine fibres we recommend our [Merino](/needles/) felting needle set.
+    colours:
+      - name: Tuna
+      - name: Coral
+      - name: Salmon
+      - name: Hottuna
+      - name: Pumpkin
+      - name: Scarlet
+      - name: Crimson
+      - name: Darkcrimson
+      - name: Rubarb
+      - name: Elderberry
+      - name: Magenta
+      - name: Grapejelly
+      - name: Floss
+      - name: Babygirl
+      - name: Violet
+      - name: Iris
+      - name: Crocus
+      - name: Amethyst
+      - name: Navy
+      - name: Blueberry
+      - name: Royal
+      - name: Saphire
+      - name: Lake
+      - name: Turquoiseblue
+      - name: Sea
+      - name: Turquoisegreen
+      - name: Teal
+      - name: Pine
+      - name: Malachit
+      - name: Sage
+      - name: Asparagus
+      - name: Lawn
+      - name: Pomme
+      - name: Olive
+      - name: Spinach
+      - name: Brass
+      - name: Wasp
+      - name: Eggyolk
+      - name: Egg
+      - name: Straw
+      - name: Milk
+      - name: Cream
+      - name: Face
+      - name: Peach
+      - name: Tan
+      - name: Sienna
+      - name: Darktan
+      - name: Mocca
+      - name: Coal
+      - name: Slate
+      - name: Stone
+    radios:
+      - name: 20 grams
+        price: 2.2
+      - name: 50 grams
+        price: 5
+      - name: 100 grams
+        price: 9.5
+  - partial: mals-multiple
+    product: Mohairroving
+    banner: true
+    text_colour: '#0F7A82'
+    description: |
+      # Mohair Roving
+      This high quality 100% mohair roving is
+      very shiny, silky, smooth, and soft. Try it fluffed up for hairdos or wetfelted together with Merino for fabric texture.
+      It attaches best to other fibres with our [Cream](/needles/) felting needle.
+    colours:
+      - name: Aqua
+      - name: Green
+      - name: Turquoise
+      - name: Multi
+      - name: Purple
+      - name: Red
+      - name: Grey
+        hide: true
+    radios:
+      - name: 20 grams
+        price: 4.4
+      - name: 50 grams
+        price: 10
+  - partial: mals-multiple
+    product: Mohairlocks
+    text_colour: '#D43026'
+    description: |
+      # Mohairlocks
+      Hand dyed Kidmohairlocks are great for hair or beards. Goat's hair has a light shine.
+      Sometimes there are little bits of straw or grass included. This means that the goats have a natural life.
+      Big companies use chemicals to dissolve the vegetable matter.
+      Our locks are hand dyed on the farm and are not carded in order to not disturb the curls.
+    colours:
+      - name: Yellow
+      - name: Lime
+      - name: Lightgreen
+      - name: Green
+      - name: Darkgreen
+      - name: Blue
+      - name: Jeans
+      - name: Steel
+      - name: Blueviolet
+      - name: Purple
+      - name: Violet
+      - name: Pink
+      - name: Hotpink
+      - name: Red
+      - name: Apricot
+      - name: Auburn
+      - name: Amber
+      - name: Carrot
+      - name: Darkbrown
+      - name: Foxred
+      - name: Honey
+      - name: Lightorange
+      - name: Orange
+      - name: Grey
+      - name: Black
+    radios:
+      - name: 20 grams
+        price: 4.4
+      - name: 50 grams
+        price: 10
+      - name: 100 grams
+        price: 19.5
