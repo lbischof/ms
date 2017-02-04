@@ -12,9 +12,28 @@
             "type": "string",
             "title": "Product"
         },
-        "banner": {
+        "textbox": {
             "type": "boolean",
-            "title": "Banner"
+            "format": "checkbox",
+            "title": "Textbox"
+        },
+        "hide": {
+            "type": "boolean",
+            "format": "checkbox",
+            "title": "Hide"
+        },
+        "price": {
+            "type": "number",
+            "title": "Price"
+        },
+        "text_colour": {
+            "type": "string",
+            "title": "Text colour"
+        },
+        "description": {
+            "type": "string",
+            "title": "Description",
+            "format": "textarea"
         }
     }
 }
