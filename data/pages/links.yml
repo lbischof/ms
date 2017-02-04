@@ -6,64 +6,125 @@ content:
 - partial: links
   title: Links
   links:
-    What is Anthroposophy:
-        Introduction to Anthroposophy: http://www.sab.org.br/antrop/anthrop-eng.htm
-        Rudolf Steiner's Spiritual Science: http://www.openwaldorf.com/steiner.html
-        Goetheanum: http://www.goetheanum.org/
-        Anthroposophical Society in America: http://www.anthroposophy.org/
-        Anthroposophical Society in Canada: http://www.anthroposophy.ca/
-        Rudolf Steiner Archive: http://www.rsarchive.org
-        Waldorf Answers: http://www.waldorfanswers.com/
-        online Calendar of the Soul: http://www.calendarofthesoul.net/
-    Waldorf Schools:
-        Waldorf Schools and initiatives in Canada: /waldorf-schools
-        AWSNA: https://waldorfeducation.org/awsna
-    Homeschooling:
-        waldorfhomeschoolers.com: http://www.waldorfhomeschoolers.com/
-        live-education.com: http://www.live-education.com/
-    Teacher Training:
-        Rudolf Steiner Centre Toronto: http://www.rudolfsteinercentre.ca/
-        Waldorf Institute of Southern California: http://www.waldorfteaching.org/
-        Center for Anthroposophy: http://www.centerforanthroposophy.org/
-        Sound Circle: http://www.soundcircle.org/
-        Rudolf Steiner College: http://www.steinercollege.edu/
-        Sunbridge College: http://www.sunbridge.edu/
-        Emerson College England: http://www.emerson.org.uk/
-    Camphill:
-        Camphill Communities Ontario: http://www.camphill.on.ca/
-        The Cascadia Society: http://www.cascadiasociety.org/
-        Glenora Farm: http://www.glenorafarm.org/
-        Maison Emmanuel: http://www.maisonemmanuel.org/
-    Eurythmy/Movement:
-        Eurythmy Association of North America: http://www.eana.org/
-        Eurythmy Spring Valley: http://www.eurythmy.org/
-        Spacial Dynamics Institute: http://www.spacialdynamics.com/
-    Biodynamics agriculture:
-        Biodynamic Association: http://www.biodynamics.com
-    Waldorf House Exchange/Voluntary Services:
-        WaldorfWide: http://www.waldorfwide.com/
-        Freunde der Erziehungskunst: http://www.freunde-waldorf.de/
-    medicine/nursing:
-        Hiscia: http://www.hiscia.ch/
-        Weleda: http://www.weleda.com/
-        Wala: http://www.wala.de/
-        Lukasklinik: http://www.lukasklinik.ch/
-        Arscura: http://www.arscura.com/
-        Hesperus Fellowship Community: http://www.hesperus.ca/
-    religion:
-        The Christian Community: http://www.thechristiancommunity.org/
-    banking:
-        Triodos Bank: http://www.triodos.com/
-        Rudolf Steiner Foundation: http://rsfsocialfinance.org/
-    lazure:
-        lazure.com: http://www.lazure.com/
-        lazurebylogsdon.com: http://www.lazurebylogsdon.com/
-    fonts:
-        Waldorf fonts: http://www.waldorfschrift.de
-        Fontspace: http://www.fontspace.com/category/anthroposophical
-        Sagittar: http://www.sagittar.co.uk
-    news:
-        News Network Anthroposophy: http://www.nna-news.org/
-    Interesting links worldwide:
-        Egypt/Sekem: http://www.sekem.com/
-        Brazil/Monte Azul: http://www.monteazul.org.br
+    - name: What is Anthroposophy
+      links:
+          - name: Introduction to Anthroposophy
+            url: http://www.sab.org.br/antrop/anthrop-eng.htm
+          - name: Rudolf Steiner's Spiritual Science
+            url: http://www.openwaldorf.com/steiner.html
+          - name: Goetheanum
+            url: http://www.goetheanum.org/
+          - name: Anthroposophical Society in America
+            url: http://www.anthroposophy.org/
+          - name: Anthroposophical Society in Canada
+            url: http://www.anthroposophy.ca/
+          - name: Rudolf Steiner Archive
+            url: http://www.rsarchive.org
+          - name: Waldorf Answers
+            url: http://www.waldorfanswers.com/
+          - name: online Calendar of the Soul
+            url: http://www.calendarofthesoul.net/
+    - name: Waldorf Schools
+      links:
+          - name: Waldorf Schools and initiatives in Canada
+            url: /waldorf-schools
+          - name: AWSNA
+            url: https://waldorfeducation.org/awsna
+    - name: Homeschooling
+      links:
+          - name: waldorfhomeschoolers.com
+            url: http://www.waldorfhomeschoolers.com/
+          - name: live-education.com
+            url: http://www.live-education.com/
+    - name: Teacher Training
+      links:
+          - name: Rudolf Steiner Centre Toronto
+            url: http://www.rudolfsteinercentre.ca/
+          - name: Waldorf Institute of Southern California
+            url: http://www.waldorfteaching.org/
+          - name: Center for Anthroposophy
+            url: http://www.centerforanthroposophy.org/
+          - name: Sound Circle
+            url: http://www.soundcircle.org/
+          - name: Rudolf Steiner College
+            url: http://www.steinercollege.edu/
+          - name: Sunbridge College
+            url: http://www.sunbridge.edu/
+          - name: Emerson College England
+            url: http://www.emerson.org.uk/
+    - name: Camphill
+      links:
+          - name: Camphill Communities Ontario
+            url: http://www.camphill.on.ca/
+          - name: The Cascadia Society
+            url: http://www.cascadiasociety.org/
+          - name: Glenora Farm
+            url: http://www.glenorafarm.org/
+          - name: Maison Emmanuel
+            url: http://www.maisonemmanuel.org/
+    - name: Eurythmy/Movement
+      links:
+          - name: Eurythmy Association of North America
+            url: http://www.eana.org/
+          - name: Eurythmy Spring Valley
+            url: http://www.eurythmy.org/
+          - name: Spacial Dynamics Institute
+            url: http://www.spacialdynamics.com/
+    - name: Biodynamics agriculture
+      links:
+          - name: Biodynamic Association
+            url: http://www.biodynamics.com
+    - name: Waldorf House Exchange/Voluntary Services
+      links:
+          - name: WaldorfWide
+            url: http://www.waldorfwide.com/
+          - name: Freunde der Erziehungskunst
+            url: http://www.freunde-waldorf.de/
+    - name: medicine/nursing
+      links:
+          - name: Hiscia
+            url: http://www.hiscia.ch/
+          - name: Weleda
+            url: http://www.weleda.com/
+          - name: Wala
+            url: http://www.wala.de/
+          - name: Lukasklinik
+            url: http://www.lukasklinik.ch/
+          - name: Arscura
+            url: http://www.arscura.com/
+          - name: Hesperus Fellowship Community
+            url: http://www.hesperus.ca/
+    - name: religion
+      links:
+          - name: The Christian Community
+            url: http://www.thechristiancommunity.org/
+    - name: banking
+      links:
+          - name: Triodos Bank
+            url: http://www.triodos.com/
+          - name: Rudolf Steiner Foundation
+            url: http://rsfsocialfinance.org/
+    - name: lazure
+      links:
+          - name: lazure.com
+            url: http://www.lazure.com/
+          - name: lazurebylogsdon.com
+            url: http://www.lazurebylogsdon.com/
+    - name: fonts
+      links:
+          - name: Waldorf fonts
+            url: http://www.waldorfschrift.de
+          - name: Fontspace
+            url: http://www.fontspace.com/category/anthroposophical
+          - name: Sagittar
+            url: http://www.sagittar.co.uk
+    - name: news
+      links:
+          - name: News Network Anthroposophy
+            url: http://www.nna-news.org/
+    - name: Interesting links worldwide
+      links:
+          - name: Egypt/Sekem
+            url: http://www.sekem.com/
+          - name: Brazil/Monte Azul
+            url: http://www.monteazul.org.br

@@ -1,9 +1,9 @@
 <div class="container links">
     <h1><%= pdata.title %></h1>
-    <% pdata.links.each do |title, links| %>
-        <h2><%= title %></h2>
-        <% links.each do |link, value| %>
-            <a href="<%= value %>" target="_blank"><%= link %></a><br>
+    <% pdata.links.each do |header| %>
+        <h2><%= header.name %></h2>
+        <% header.links.each do |link| %>
+            <a href="<%= link.url %>" target="_blank"><%= link.name %></a><br>
         <% end %>
     <% end %>
     <p class="disclaimer">

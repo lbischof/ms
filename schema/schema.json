@@ -64,6 +64,10 @@
                     {
                         "title": "Markdown (Text)",
                         "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/markdown.json"
+                    },
+                    {
+                        "title": "Links",
+                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/links.json"
                     }
                 ]
             }

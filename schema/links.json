@@ -1,0 +1,53 @@
+{
+    "type": "object",
+    "options": {
+        "keep_oneof_values": false
+    },
+    "properties": {
+        "partial": {
+            "type": "string",
+            "enum": ["links"],
+            "options": {
+                "hidden": true
+            }
+        },
+        "title": {
+            "type": "string",
+            "title": "Title"
+        },
+        "links": {
+            "type": "array",
+            "title": "Links",
+            "items": {
+                "type": "object",
+                "options": {
+                    "collapsed": true
+                },
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "links": {
+                        "type": "array",
+                        "title": "Links",
+                        "options": {
+                            "collapsed": true
+                        },
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
