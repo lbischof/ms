@@ -14,11 +14,15 @@
         },
         "links": {
             "type": "array",
-            "title": "Links",
+            "title": " ",
+            "options": {
+                "disable_collapse": true
+            },
             "items": {
                 "type": "object",
+                "headerTemplate": "{{i1}}",
                 "options": {
-                    "collapsed": true
+                    "disable_collapse": true
                 },
                 "properties": {
                     "name": {
@@ -33,6 +37,13 @@
                         },
                         "items": {
                             "type": "object",
+                            "headerTemplate": "{{self.name}}",
+                            "options": {
+                                "collapsed": true
+                            },
+                            "links": [{
+                                "href": "{{self.url}}"
+                            }],
                             "properties": {
                                 "name": {
                                     "type": "string"
