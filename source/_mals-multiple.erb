@@ -7,7 +7,6 @@
 <% if !pdata.radios and !pdata.price %>
     <% raise "#{get_current_page}: product has no price" %>
 <% end %>
-<% pdata.images = true if not defined? pdata.images %>
 
 <% unless pdata.hide %>
     <%= banner_image_tag pdata[:product] if pdata.banner %>
@@ -25,7 +24,7 @@
                     <%# Check if it's a hash %>
                     <% next if colour.hide %>
                     <div class="colours">
-                        <%= colour_image_tag(pdata.product, colour.name) if pdata.images %>
+                        <%= colour_image_tag(pdata.product, colour.name) unless pdata.no_images %>
                         <%= "<label>" if not pdata.textboxes %>
                             <input type="checkbox" name="product1[]" value="<%= colour.name %>">
                             <%= "<label>" if pdata.textboxes %>

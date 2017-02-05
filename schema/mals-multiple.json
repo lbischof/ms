@@ -29,11 +29,10 @@
             "title": "Textboxes",
             "format": "checkbox"
         },
-        "images": {
+        "no_images": {
             "type": "boolean",
-            "title": "Images",
-            "format": "checkbox",
-            "default": true
+            "title": "No images",
+            "format": "checkbox"
         },
         "text_colour": {
             "type": "string",
@@ -74,10 +73,10 @@
                         "type": "string",
                         "watch": {
                             "product": "arr_item.product",
-                            "images": "arr_item.images"
+                            "no_images": "arr_item.no_images"
                         },
                         "links": [{
-                            "href": "{{if images}}https://raw.githubusercontent.com/lbischof/ms/source/source/images/wool/{{product|sanitize}}/{{self|sanitize}}.jpg{{/if}}",
+                            "href": "{{if no_images|falsy}}https://raw.githubusercontent.com/lbischof/ms/source/source/images/wool/{{product|sanitize}}/{{self|sanitize}}.jpg{{/if}}",
                             "mediaType": "image/jpeg"
                         }]
                     },

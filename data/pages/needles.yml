@@ -6,7 +6,7 @@ content:
 - partial: mals-multiple
   product: Wizpick Felting Needles
   textboxes: true
-  images: false
+  no_images: true
   banner: true
   description: |
     # Wizpick Felting Needles
@@ -48,7 +48,7 @@ content:
 - partial: mals-multiple
   product: Wizpick Felting Needles
   textboxes: true
-  images: false
+  no_images: true
   banner: false
   description: |
     Wizpick felting needles cover the whole range of handcraft use and will allow you to explore new techniques and ideas.
@@ -89,7 +89,7 @@ content:
 - partial: mals-multiple
   product: Wizpick Felting Needles
   textboxes: true
-  images: false
+  no_images: true
   banner: false
   description: |
     Most felting needles are triangular with three working edges, except Star Needles, which are a new innovation with four edges.
