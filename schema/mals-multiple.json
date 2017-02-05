@@ -44,11 +44,14 @@
             "title": "Description",
             "format": "textarea",
             "watch": {
-                "product": "arr_item.product"
+                "product": "arr_item.product",
+                "page": "config.page",
+                "repo": "config.repo",
+                "branch": "config.branch"
             },
             "links": [{
                 "rel": "Upload new images for this product",
-                "href": "https://github.com/lbischof/ms/upload/source/source/images/wool/{{product|sanitize}}"
+                "href": "https://github.com/{{repo}}/upload/{{branch}}/source/images/{{page}}/{{product|sanitize}}"
             }]
         },
         "colours": {
@@ -73,10 +76,13 @@
                         "type": "string",
                         "watch": {
                             "product": "arr_item.product",
-                            "no_images": "arr_item.no_images"
+                            "no_images": "arr_item.no_images",
+                            "page": "config.page",
+                            "repo": "config.repo",
+                            "branch": "config.branch"
                         },
                         "links": [{
-                            "href": "{{if no_images|falsy}}https://raw.githubusercontent.com/lbischof/ms/source/source/images/wool/{{product|sanitize}}/{{self|sanitize}}.jpg{{/if}}",
+                            "href": "{{if no_images|falsy}}https://raw.githubusercontent.com/{{repo}}/{{branch}}/source/images/{{page}}/{{product|sanitize}}/{{self|sanitize}}.jpg{{/if}}",
                             "mediaType": "image/jpeg"
                         }]
                     },

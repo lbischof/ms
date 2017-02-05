@@ -10,12 +10,10 @@
                 "hidden": true
             },
             "properties": {
-                "path": {
-                    "type": "string"
-                },
-                "repo": {
-                    "type": "string"
-                }
+                "page": { "type": "string" },
+                "path": { "type": "string" },
+                "repo": { "type": "string" },
+                "branch": { "type": "string" }
             }
         },
         "page": {
