@@ -10,7 +10,8 @@
         },
         "product": {
             "type": "string",
-            "title": "Product"
+            "title": "Product",
+            "description": "This appears in the shopping cart"
         },
         "textbox": {
             "type": "boolean",
@@ -28,7 +29,8 @@
         },
         "text_colour": {
             "type": "string",
-            "title": "Text colour"
+            "title": "Text colour",
+            "format": "color"
         },
         "description": {
             "type": "string",

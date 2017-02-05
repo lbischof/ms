@@ -1,5 +1,6 @@
 {
     "type": "object",
+    "id": "arr_item",
     "properties": {
         "partial": {
             "type": "string",
@@ -10,7 +11,8 @@
         },
         "product": {
             "type": "string",
-            "title": "Product"
+            "title": "Product",
+            "description": "This appears in the shopping cart"
         },
         "hide": {
             "type": "boolean",
@@ -35,12 +37,20 @@
         },
         "text_colour": {
             "type": "string",
-            "title": "Text colour"
+            "title": "Text colour",
+            "format": "color"
         },
         "description": {
             "type": "string",
             "title": "Description",
-            "format": "textarea"
+            "format": "textarea",
+            "watch": {
+                "product": "arr_item.product"
+            },
+            "links": [{
+                "rel": "Upload new images for this product",
+                "href": "https://github.com/lbischof/ms/upload/source/source/images/wool/{{product|sanitize}}"
+            }]
         },
         "colours": {
             "type": "array",
@@ -49,7 +59,7 @@
                 "collapsed": true
             },
             "items": {
-                "headerTemplate": "{{self.name}}",
+                "headerTemplate": "{{self.name}} {{if self.hide}}(hidden){{/if}}",
                 "type": "object",
                 "options": {
                     "disable_properties": false,
@@ -60,10 +70,23 @@
                         "type": "boolean",
                         "format": "checkbox"
                     },
-                    "name": { "type": "string" },
+                    "name": {
+                        "type": "string",
+                        "watch": {
+                            "product": "arr_item.product",
+                            "images": "arr_item.images"
+                        },
+                        "links": [{
+                            "href": "{{if images}}https://raw.githubusercontent.com/lbischof/ms/source/source/images/wool/{{product|sanitize}}/{{self|sanitize}}.jpg{{/if}}",
+                            "mediaType": "image/jpeg"
+                        }]
+                    },
                     "gauge": { "type": "string" },
                     "usage": { "type": "string" },
-                    "text_colour": { "type": "string" }
+                    "text_colour": {
+                        "type": "string",
+                        "format": "color"
+                    }
                 },
                 "required": ["name"],
                 "defaultProperties": ["name","hide"]
