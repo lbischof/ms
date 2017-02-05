@@ -51,7 +51,6 @@
             "items": {
                 "headerTemplate": "{{self.name}}",
                 "type": "object",
-                "format": "grid",
                 "options": {
                     "disable_properties": false,
                     "collapsed": true
@@ -79,7 +78,6 @@
             "items": {
                 "headerTemplate": "{{self.name}} : {{self.price}}",
                 "type": "object",
-                "format": "grid",
                 "options": {
                     "collapsed": true
                 },
