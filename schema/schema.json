@@ -37,7 +37,7 @@
                 "disable_collapse": true
             },
             "items": {
-                "headerTemplate": "{{if self.product}}{{self.product}}{{else}}{{self.partial}}{{/if}}",
+                "headerTemplate": "{{if self.product}}{{self.product}}{{else}}{{self.partial}}{{/if}}{{if self.hide}} (hidden){{/if}}",
                 "options":{
                     "disable_collapse": true
                 },
