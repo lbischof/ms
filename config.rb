@@ -34,6 +34,7 @@ end
 activate :automatic_image_sizes
 set :relative_links, true
 activate :relative_assets
+activate :asset_hash
 activate :directory_indexes
 page "404.html", :directory_index => false
 page "google9818175e4e03fea8.html", :directory_index => false
@@ -44,6 +45,17 @@ configure :build do
   activate :minify_javascript
   activate :minify_html
   activate :gzip
+end
+
+after_build do |builder|
+    rootPath = app.root
+      buildDir = app.config[:build_dir]
+      htmlDir = buildDir + File::SEPARATOR + '**' + File::SEPARATOR + '*.html'
+      Dir.glob(htmlDir) do |file|
+        assetPath = rootPath + File::SEPARATOR + file
+        file.slice! buildDir + File::SEPARATOR
+        %x(node_modules/.bin/critical #{assetPath} --base #{buildDir} --htmlTarget #{file} --minify --inline)
+      end
 end
 
 # Deploy the static files
