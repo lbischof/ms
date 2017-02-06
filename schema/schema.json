@@ -53,23 +53,23 @@
                 "oneOf": [
                     {
                         "title": "Mals Multiple",
-                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/mals-multiple.json"
+                        "$ref": "schema/mals-multiple.json"
                     },
                     {
                         "title": "Mals Single",
-                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/mals-single.json"
+                        "$ref": "schema/mals-single.json"
                     },
                     {
                         "title": "Markdown (Text)",
-                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/markdown.json"
+                        "$ref": "schema/markdown.json"
                     },
                     {
                         "title": "HTML",
-                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/html.json"
+                        "$ref": "schema/html.json"
                     },
                     {
                         "title": "Links",
-                        "$ref": "https://raw.githubusercontent.com/lbischof/ms/source/schema/links.json"
+                        "$ref": "schema/links.json"
                     }
                 ]
             }
