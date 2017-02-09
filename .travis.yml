@@ -18,7 +18,7 @@ script:
   - npm install critical
   - jpegoptim --max=80 --strip-all -T5 -o source/images/{,**/,**/**/}*.jpg
   - bundle exec middleman build
-  - bundle exec htmlproofer --allow-hash-href --log-level debug --timeframe 2w ./build
+  - bundle exec htmlproofer --allow-hash-href --only-4xx --log-level debug --timeframe 2w ./build
 after_success:
   - echo ${GH_TOKEN} > ./.git/credentials
   - git config --global user.name ${GH_USER}
