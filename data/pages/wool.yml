@@ -5,7 +5,7 @@ content:
   - partial: mals-multiple
     product: Corriedale
     banner: true
-    text_colour: '#3E70A5'
+    text_colour: '#3e70a5'
     description: |
       # Corriedale
       Corriedale is courser wool (about 30 microns) and is preferred for needle felting simply because it is easier.
@@ -74,7 +74,7 @@ content:
         price: 9.5
   - partial: mals-multiple
     product: EuropeanMerino
-    text_colour: '#9A4356'
+    text_colour: '#9a4356'
     description: |
       # European Merino
       European Merino is courser (more like Corriedale) but felts like Merino.
@@ -185,7 +185,7 @@ content:
   - partial: mals-multiple
     product: Mohairroving
     banner: true
-    text_colour: '#0F7A82'
+    text_colour: '#0f7a82'
     description: |
       # Mohair Roving
       This high quality 100% mohair roving is
@@ -207,10 +207,10 @@ content:
         price: 10
   - partial: mals-multiple
     product: Mohairlocks
-    text_colour: '#D43026'
+    text_colour: '#d43026'
     description: |
-      # Mohairlocks
-      Hand dyed Kidmohairlocks are great for hair or beards. Goat's hair has a light shine.
+      # Mohair locks
+      Hand dyed Kid Mohair locks are great for hair or beards. Goat's hair has a light shine.
       Sometimes there are little bits of straw or grass included. This means that the goats have a natural life.
       Big companies use chemicals to dissolve the vegetable matter.
       Our locks are hand dyed on the farm and are not carded in order to not disturb the curls.
