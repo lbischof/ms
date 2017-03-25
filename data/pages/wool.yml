@@ -202,9 +202,9 @@ content:
         hide: true
     radios:
       - name: 20 grams
-        price: 4.4
+        price: 7
       - name: 50 grams
-        price: 10
+        price: 15
   - partial: mals-multiple
     product: Mohairlocks
     text_colour: '#d43026'
