@@ -215,13 +215,15 @@ content:
       Big companies use chemicals to dissolve the vegetable matter.
       Our locks are hand dyed on the farm and are not carded in order to not disturb the curls.
     colours:
-      - name: Yellow
+      - name: Blond
       - name: Lime
       - name: Lightgreen
+        hide: true
       - name: Green
       - name: Darkgreen
       - name: Blue
       - name: Jeans
+        hide: true
       - name: Steel
       - name: Blueviolet
       - name: Purple
@@ -237,6 +239,7 @@ content:
       - name: Foxred
       - name: Honey
       - name: Lightorange
+        hide: true
       - name: Orange
       - name: Grey
       - name: Black
