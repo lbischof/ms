@@ -245,8 +245,8 @@ content:
       - name: Black
     radios:
       - name: 20 grams
-        price: 4.4
+        price: 7
       - name: 50 grams
-        price: 10
+        price: 15
       - name: 100 grams
-        price: 19.5
+        price: 28.5
