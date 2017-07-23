@@ -43,7 +43,7 @@ content:
         text_colour: ""
   radios:
     - name: Price group one
-      price: 1.8
+      price: 2
 
 - partial: mals-multiple
   product: Wizpick Felting Needles
@@ -84,7 +84,7 @@ content:
         text_colour: "#EEDA84"
   radios:
     - name: Price group two
-      price: 2.1
+      price: 2.3
 
 - partial: mals-multiple
   product: Wizpick Felting Needles
@@ -120,7 +120,7 @@ content:
         text_colour: ""
   radios:
     - name: Price group three
-      price: 2.6
+      price: 2.9
 
 - partial: markdown
   markdown: |
