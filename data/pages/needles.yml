@@ -145,37 +145,37 @@ content:
 - partial: mals-single
   product: Completion Needle Set
   textbox: true
-  price: 37
+  price: 39
   text_colour: "#3E70A5"
   description: |
-      # Completion Set $37
+      # Completion Set $39.-
       18 needles: Get them all
 
 - partial: mals-single
   product: Novice Needle Set
   textbox: true
-  price: 18
+  price: 19
   text_colour: "#00B03E"
   description: |
-      # Novice Set $18
+      # Novice Set $19.-
       9 needles: Start with these<br>red, burgundy, mauve, brown,<br>orange, yellow, cream, blue, gilt
 
 - partial: mals-single
   product: Devotion Needle Set
   textbox: true
-  price: 19
+  price: 20
   text_colour: "#D43026"
   description: |
-      # Devotion Set $19
+      # Devotion Set $20.-
       9 needles: The second half
 
 - partial: mals-single
   product: Merino Needle Set
   textbox: true
-  price: 14
+  price: 15
   text_colour: "#AE00AD"
   description: |
-      # Merino Set $14
+      # Merino Set $15.-
       6 needles: Fine fibre experts<br>orange, white, grey, aqua, cream, silver
 
 - partial: html
