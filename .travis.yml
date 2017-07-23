@@ -23,6 +23,6 @@ after_success:
   - echo ${GH_TOKEN} > ./.git/credentials
   - git config --global user.name ${GH_USER}
   - git config --global user.email ${GH_EMAIL}
-  - git remote set-url origin "https://${GH_TOKEN}@github.com/lbischof/maplesplendor.ca.git"
+  - git remote set-url origin "https://${GH_TOKEN}@github.com/lbischof/ms.git"
   - bundle exec middleman deploy
 #  - curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${CF_ZONE}/purge_cache" -H "X-Auth-Email: ${CF_EMAIL}" -H "X-Auth-Key: ${CF_TOKEN}" -H "Content-Type: application/json" --data '{"purge_everything":true}'
