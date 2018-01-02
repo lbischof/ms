@@ -97,6 +97,7 @@ content:
       - name: Water
       - name: Powder
       - name: Royal
+        hide: true
       - name: Ultramarine
       - name: Rubarbpie
       - name: Cookedrubarb
