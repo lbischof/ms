@@ -146,6 +146,7 @@ content:
       - name: Navy
       - name: Blueberry
       - name: Royal
+        hide: true
       - name: Saphire
       - name: Lake
       - name: Turquoiseblue
