@@ -5,6 +5,7 @@ content:
   - partial: mals-multiple
     product: Felt sheet
     banner: true
+    textboxes: true
     text_colour: '#BB2B23'
     description: |
       # Felt
