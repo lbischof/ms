@@ -127,6 +127,7 @@ content:
     colours:
       - name: Tuna
       - name: Coral
+        hide: true
       - name: Salmon
       - name: Hottuna
       - name: Pumpkin
@@ -136,6 +137,7 @@ content:
       - name: Rubarb
       - name: Elderberry
       - name: Magenta
+        hide: true
       - name: Grapejelly
       - name: Floss
       - name: Babygirl
