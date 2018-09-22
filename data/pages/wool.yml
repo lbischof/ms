@@ -89,6 +89,7 @@ content:
       - name: Newskin
       - name: Skin
       - name: Baby
+        hide: true
       - name: Camel
       - name: Chocolate
       - name: Metal
@@ -139,7 +140,7 @@ content:
       - name: Magenta
         hide: true
       - name: Grapejelly
-      - name: Floss
+      - name: Baby
       - name: Babygirl
       - name: Violet
       - name: Iris
