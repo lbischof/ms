@@ -72,10 +72,12 @@ content:
             url: http://www.biodynamics.com
     - name: Waldorf House Exchange/Voluntary Services
       links:
-          - name: WaldorfWide
-            url: http://www.waldorfwide.com/
           - name: Freunde der Erziehungskunst
             url: http://www.freunde-waldorf.de/
+          - name: Waldorf Home Exchange
+            url: http://waldorfhomeexchange.com
+          - name: Steiner BnB
+            url: https://www.steinerbnb.com/
     - name: medicine/nursing
       links:
           - name: Hiscia
@@ -84,8 +86,6 @@ content:
             url: http://www.weleda.com/
           - name: Wala
             url: http://www.wala.de/
-          - name: Lukasklinik
-            url: http://www.lukasklinik.ch/
           - name: Arscura
             url: http://www.arscura.com/
           - name: Hesperus Fellowship Community
