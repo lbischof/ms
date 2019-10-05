@@ -20,6 +20,7 @@ content:
       - name: Lime
       - name: Apple
       - name: Mint
+        hide: true
       - name: Moss
       - name: Forest
       - name: Emerald
@@ -30,6 +31,7 @@ content:
       - name: Ice
       - name: Steel
       - name: Indigo
+        hide: true
       - name: Ink
       - name: Cobalt
       - name: Blue
@@ -91,6 +93,7 @@ content:
       - name: Baby
         hide: true
       - name: Camel
+        hide: true
       - name: Chocolate
       - name: Metal
       - name: Mouse
