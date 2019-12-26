@@ -67,6 +67,7 @@ content:
       - name: Black
       - name: Grey
       - name: White
+        hide: true
     radios:
       - name: 20 grams
         price: 2.2
