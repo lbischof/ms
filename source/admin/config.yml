@@ -50,7 +50,7 @@ collections:
               - label: Colours
                 name: colours
                 widget: list
-                summary: '{{fields.name}} hidden: {{fields.hide}}'
+                summary: '{{fields.name}} (hide: {{fields.hide}})'
                 fields:
                   - label: Name
                     name: name
@@ -58,4 +58,5 @@ collections:
                   - label: Hide
                     name: hide
                     required: false
+                    default: false
                     widget: boolean
