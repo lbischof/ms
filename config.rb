@@ -27,10 +27,6 @@ data.pages.each do |page,data|
      proxy proxy_page, "/page.html", :layout => 'layout', :locals => { page: data.page, page_data: data.content }, :ignore => true
 end
 
-data.redirects.each do |old_path, new_path|
-    redirect old_path, to: new_path
-end
-
 activate :automatic_image_sizes
 set :relative_links, true
 activate :relative_assets
