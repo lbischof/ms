@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: lbischof/ms
+  branch: source
 
 media_folder: source/images
 
