@@ -47,16 +47,16 @@ configure :build do
   activate :gzip
 end
 
-after_build do |builder|
-    rootPath = app.root
-      buildDir = app.config[:build_dir]
-      htmlDir = buildDir + File::SEPARATOR + '**' + File::SEPARATOR + '*.html'
-      Dir.glob(htmlDir) do |file|
-        assetPath = rootPath + File::SEPARATOR + file
-        file.slice! buildDir + File::SEPARATOR
-        %x(node_modules/.bin/critical #{assetPath} --base #{buildDir} --htmlTarget #{file} --minify --inline)
-      end
-end
+#after_build do |builder|
+#    rootPath = app.root
+#      buildDir = app.config[:build_dir]
+#      htmlDir = buildDir + File::SEPARATOR + '**' + File::SEPARATOR + '*.html'
+#      Dir.glob(htmlDir) do |file|
+#        assetPath = rootPath + File::SEPARATOR + file
+#        file.slice! buildDir + File::SEPARATOR
+#        %x(node_modules/.bin/critical #{assetPath} --base #{buildDir} --htmlTarget #{file} --minify --inline)
+#      end
+#end
 
 # Deploy the static files
 activate :deploy do |deploy|
