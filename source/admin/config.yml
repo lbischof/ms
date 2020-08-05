@@ -47,6 +47,18 @@ collections:
               - label: Text Colour
                 name: text_colour
                 widget: string
+              - label: Radios
+                name: radios
+                widget: list
+                summary: '{{fields.name}} ${{fields.price}}'
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Price
+                    name: price
+                    valueType: float
+                    widget: number
               - label: Colours
                 name: colours
                 widget: list
