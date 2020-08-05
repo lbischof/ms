@@ -1,3 +1,16 @@
 backend:
   name: github
   repo: lbischof/ms
+
+media_folder: source/images
+
+collections:
+  - name: pages
+    identifier_field: title
+    folder: data/pages
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+
+
