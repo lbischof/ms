@@ -24,7 +24,7 @@ end
 ignore 'page.html.erb'
 data.pages.each do |page,data|
      proxy_page = (page == 'index') ? 'index.html' : "/#{page}/index.html"
-     proxy proxy_page, "/page.html", :layout => 'layout', :locals => { page: data.page, page_data: data.content }, :ignore => true
+     proxy proxy_page, "/page.html", :layout => 'layout', :locals => { page: data }, :ignore => true
 end
 
 activate :automatic_image_sizes

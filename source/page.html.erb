@@ -1,4 +1,4 @@
-<% page_data.each do |value| %>
+<% page.content.each do |value| %>
     <% if not value.is_a? String and value.partial %>
         <%= includepartial value %>
     <% end %>
