@@ -41,3 +41,17 @@ collections:
               - label: Textboxes
                 name: textboxes
                 widget: boolean
+              - label: "Description"
+                name: "description"
+                widget: markdown
+              - label: Text Colour
+                name: text_colour
+                widget: string
+              - label: Colours
+                name: colours
+                widget: list
+                summary: '{{ fields.name }}'
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
