@@ -10,6 +10,7 @@ collections:
     identifier_field: title
     folder: data/pages
     format: yml
+    extension: yml
     fields:
       - label: "Title"
         name: "title"
