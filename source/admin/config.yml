@@ -6,6 +6,7 @@ media_folder: source/images
 
 collections:
   - name: pages
+    label: Pages
     identifier_field: title
     folder: data/pages
     fields:
