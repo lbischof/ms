@@ -8,7 +8,7 @@ media_folder: source/images
 collections:
   - name: pages
     label: Pages
-    identifier_field: title
+    identifier_field: name
     folder: data/pages
     format: yml
     extension: yml
