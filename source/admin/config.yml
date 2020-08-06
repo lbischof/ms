@@ -43,12 +43,12 @@ collections:
               - label: Textboxes
                 name: textboxes
                 widget: boolean
-              - label: "Description"
-                name: "description"
-                widget: markdown
               - label: Text Colour
                 name: text_colour
                 widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown
               - label: Radios
                 label_singular: Radio
                 name: radios
@@ -64,7 +64,6 @@ collections:
                     widget: number
               - label: Colours
                 label_singular: Colour
-                minimize_collapsed: true
                 name: colours
                 widget: list
                 summary: '{{fields.name}} (hide: {{fields.hide}})'
