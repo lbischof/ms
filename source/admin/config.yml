@@ -80,7 +80,7 @@ collections:
           - label: 'Text'
             name: 'markdown'
             widget: object
-            summary: 'Text'
+            summary: '{{fields.markdown}}'
             fields:
               - label: Banner
                 name: banner
@@ -108,6 +108,7 @@ collections:
               - label: 'Button'
                 name: 'button'
                 widget: object
+                summary: '{{fields.text}}'
                 fields:
                 - label: Text
                   name: text
@@ -118,6 +119,7 @@ collections:
               - label: 'Secondary'
                 name: 'secondary'
                 widget: object
+                summary: '{{fields.text}}'
                 fields:
                 - label: Text
                   name: text
