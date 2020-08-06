@@ -165,7 +165,7 @@ collections:
                 widget: string
               - label: Link Sections
                 label_singular: Link Section
-                name: link
+                name: links
                 widget: list
                 summary: '{{fields.name}}'
                 fields:
