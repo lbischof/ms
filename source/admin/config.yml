@@ -155,3 +155,33 @@ collections:
                 - label: Link
                   name: link
                   widget: string
+          - label: 'Links'
+            name: 'links'
+            widget: object
+            summary: 'Links'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link Sections
+                label_singular: Link Section
+                name: link
+                widget: list
+                summary: '{{fields.name}}'
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Links
+                    label_singular: Link
+                    name: link
+                    widget: list
+                    summary: '{{fields.name}}'
+                    fields:
+                      - label: Name
+                        name: name
+                        widget: string
+                      - label: URL
+                        name: url
+                        widget: string
+                        pattern: ['^https?://', "Must begin with http:// or https://"]
