@@ -12,6 +12,8 @@ collections:
     folder: data/pages
     format: yml
     extension: yml
+    editor:
+      preview: false
     fields:
       - label: "Name"
         name: "name"
@@ -22,7 +24,7 @@ collections:
       - label: "Description"
         name: "description"
         widget: "text"
-      - label: 'Content'
+      - label: 'Section'
         name: 'content'
         widget: 'list'
         typeKey: partial
