@@ -77,3 +77,51 @@ collections:
                     required: false
                     default: false
                     widget: boolean
+          - label: 'Text'
+            name: 'markdown'
+            widget: object
+            summary: 'Text'
+            fields:
+              - label: Banner
+                name: banner
+                widget: boolean
+              - label: Text Colour
+                name: text_colour
+                widget: string
+              - label: Text
+                name: markdown
+                widget: markdown
+          - label: 'Homepage'
+            name: 'homepage'
+            widget: object
+            summary: 'Homepage'
+            fields:
+              - label: Image
+                name: image
+                widget: image
+              - label: Text Colour
+                name: text_colour
+                widget: string
+              - label: Text
+                name: markdown
+                widget: markdown
+              - label: 'Button'
+                name: 'button'
+                widget: object
+                fields:
+                - label: Text
+                  name: text
+                  widget: string
+                - label: Link
+                  name: link
+                  widget: string
+              - label: 'Secondary'
+                name: 'secondary'
+                widget: object
+                fields:
+                - label: Text
+                  name: text
+                  widget: string
+                - label: Link
+                  name: link
+                  widget: string
