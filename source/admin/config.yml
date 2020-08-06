@@ -174,7 +174,7 @@ collections:
                     widget: string
                   - label: Links
                     label_singular: Link
-                    name: link
+                    name: links
                     widget: list
                     summary: '{{fields.name}}'
                     fields:
