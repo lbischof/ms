@@ -21,7 +21,7 @@ collections:
         widget: "string"
       - label: "Description"
         name: "description"
-        widget: "string"
+        widget: "text"
       - label: 'Content'
         name: 'content'
         widget: 'list'
@@ -48,6 +48,7 @@ collections:
                 name: text_colour
                 widget: string
               - label: Radios
+                label_singular: Radio
                 name: radios
                 widget: list
                 summary: '{{fields.name}} ${{fields.price}}'
@@ -60,6 +61,8 @@ collections:
                     valueType: float
                     widget: number
               - label: Colours
+                label_singular: Colour
+                minimize_collapsed: true
                 name: colours
                 widget: list
                 summary: '{{fields.name}} (hide: {{fields.hide}})'
