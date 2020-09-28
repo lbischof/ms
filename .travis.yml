@@ -6,7 +6,7 @@ cache:
   directories:
     - tmp
 rvm:
-  - '2.4.0'
+  - '2.7.1'
 branches:
   only:
   - source # branch to build
