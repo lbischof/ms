@@ -1,7 +1,4 @@
----
-name: Felt
-title: "100% Wool Felt Dyed Oekotex 100"
-description: Almost 80 different colours. This 1mm thick felt doesn't frey or tear. Available in two sizes.
+page: {}
 content:
   - partial: mals-multiple
     product: Felt sheet
