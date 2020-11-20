@@ -60,6 +60,7 @@ content:
       - name: '45'
       - name: '46'
       - name: '47'
+        hide: true
       - name: '48'
       - name: '49'
       - name: '50'
