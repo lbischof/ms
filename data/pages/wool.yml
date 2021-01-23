@@ -34,6 +34,7 @@ content:
       - name: Indigo
         hide: true
       - name: Ink
+        hide: true
       - name: Cobalt
       - name: Blue
       - name: Purple
