@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maplesplendor</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/favicon.png">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        {{ $style := resources.Get "css/main.css.scss" | toCSS| minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
+    </head>
+    <body>
+        <header>
+            <img src="/images/logo.svg">
+                <h1>maplesplendor</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ ref . "/wool" }}">Wool</a></li>
+                    <li><a href="{{ ref . "/about" }}">Needles</a></li>
+                    <li><a href="{{ ref . "/about" }}">Felt</a></li>
+                    <li><a href="https://ww8.aitsafe.com/cf/review.cfm?userid=A4132041">Cart</a></li>
+                    <li><a href="{{ ref . "/about" }}">About</a></li>
+                </ul>
+            </nav>
+            <!--<span class="notification"></span>-->
+        </header>
+
+        <main>
+            {{- block "main" . }}{{- end }}
+        </main>
+        <footer>
+            <a href="#" title="back to top">
+            <img src="/images/logo.svg">
+            </a>
+            <ul>
+                <li><a href="{{ ref . "/about" }}">Shopping Information</a></li>
+                <li><a href="https://ww8.aitsafe.com/cf/review.cfm?userid=A4132041">Cart</a></li>
+                <li><a href="{{ ref . "/about" }}">Links</a></li>
+                <li><a href="mailto: buy@maplesplendor.ca">Contact</a></li>
+            <ul>
+        </footer>
+
+    </body>
+
+</html>

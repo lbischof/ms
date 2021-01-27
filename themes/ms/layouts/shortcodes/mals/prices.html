@@ -1,0 +1,7 @@
+{{ $name := .Get "name" }}
+{{ $price := .Get "price" }}
+{{ $product := .Parent.Get "name" }}
+<label>
+    <input name="productpr1" type="radio" value="{{ $product }}, {{ $name }} :{{ $price }}">
+    {{ $name }} {{ $price }}
+</label>

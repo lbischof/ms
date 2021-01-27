@@ -1,0 +1,5 @@
+{{ $color := .Get "color" }}
+
+<section class="container" {{ with $color }}style="color: {{ . }}"{{ end }}>
+    {{ .Inner | .Page.RenderString }}
+</section>

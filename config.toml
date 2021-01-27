@@ -1,0 +1,12 @@
+title = "Maplesplendor"
+theme = "ms"
+
+DefaultContentLanguage = "de"
+
+[params]
+  # Shortcodes that must be closed
+  # If the shortcode uses .Inner then add it here!
+  mustCloseShortcodes = ["section"]
+
+[markup.goldmark.renderer]
+  unsafe = true
