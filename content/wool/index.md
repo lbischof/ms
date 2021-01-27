@@ -65,11 +65,12 @@ Corriedale can be used as hair for puppets and to make mobiles because it never 
 {{<mals/item image="images/corriedale/black.jpg" name="Black">}}
 {{<mals/item image="images/corriedale/grey.jpg" name="Grey">}}
 
-<div class="radios">
-{{<mals/prices name="20 grams" price="2.20">}}
-{{<mals/prices name="50 grams" price="5.00">}}
-{{<mals/prices name="100 grams" price="9.50">}}
-</div>
+{{<mals/prices>}}
+  {{<mals/price name="20 grams" price="2.20">}}
+  {{<mals/price name="50 grams" price="5.00">}}
+  {{<mals/price name="100 grams" price="9.50">}}
+{{</mals/prices>}}
+
 {{</mals/multiple>}}
 
 {{</section>}}

@@ -1,0 +1,20 @@
+{{ $name := .Get "name" }}
+{{ $price := .Get "price" }}
+{{ $nested := eq .Parent.Name "mals/prices" }}
+
+{{- $product := .Parent.Get "name" -}}
+{{- if $nested -}}
+    {{- $product = .Parent.Parent.Get "name" -}}
+    <label>
+        <input name="productpr1" type="radio" value="{{ $product }}, {{ $name }} :{{ $price }}">
+        {{ $name }} {{ $price }}
+    </label>
+{{- else -}}
+    <input type="hidden" name="productpr1" value="{{ $product }}, :{{ $price }}">
+    <noscript>
+        <p>Please add up how many total: <input type="number" name="qty1"></p>
+    </noscript>
+
+    <button>Cart</button>
+{{- end -}}
+
