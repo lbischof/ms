@@ -17,9 +17,6 @@ Corriedale can be used as hair for puppets and to make mobiles because it never 
 
 {{<mals/multiple name="Corriedale">}}
 
-{{<mals/item image="images/corriedale/green.jpg" name="Green">}}
-{{<mals/item image="images/corriedale/lime.jpg" name="Lime">}}
-
 {{<mals/item image="images/corriedale/lime.jpg" name="Lime">}}
 {{<mals/item image="images/corriedale/apple.jpg" name="Apple">}}
 {{<mals/item image="images/corriedale/moss.jpg" name="Moss">}}
@@ -82,34 +79,32 @@ European Merino is courser (more like Corriedale) but felts like Merino.
 European Merino is longer in staple length with new possibilities.
 We love these subtle colours.
 
-    colours:
-      - name: Aquamarine
-      - name: Grass
-      - name: Kiwi
-      - name: Brassed
-      - name: Flax
-      - name: Newskin
-      - name: Skin
-      - name: Baby
-        hide: true
-      - name: Camel
-        hide: true
-      - name: Chocolate
-      - name: Metal
-      - name: Mouse
-      - name: Bronze
-      - name: Water
-      - name: Powder
-      - name: Royal
-        hide: true
-      - name: Ultramarine
-      - name: Rubarbpie
-      - name: Cookedrubarb
-      - name: Cherry
-      - name: Wine
-      - name: Mauve
-      - name: Grape
-      - name: Magenta
+{{<mals/multiple name="European Merino">}}
+
+{{<mals/item image="images/europeanmerino/aquamarine.jpg" name="Aquamarine">}}
+{{<mals/item image="images/europeanmerino/grass.jpg" name="Grass">}}
+{{<mals/item image="images/europeanmerino/kiwi.jpg" name="Kiwi">}}
+{{<mals/item image="images/europeanmerino/" name="Brassed">}}
+{{<mals/item image="images/europeanmerino/" name="Flax">}}
+{{<mals/item image="images/europeanmerino/" name="Newskin">}}
+{{<mals/item image="images/europeanmerino/" name="Skin">}}
+{{<mals/item image="images/europeanmerino/" name="Baby" hide="true">}}
+{{<mals/item image="images/europeanmerino/" name="Camel" hide="true">}}
+{{<mals/item image="images/europeanmerino/" name="Chocolate">}}
+{{<mals/item image="images/europeanmerino/" name="Metal">}}
+{{<mals/item image="images/europeanmerino/" name="Mouse">}}
+{{<mals/item image="images/europeanmerino/" name="Bronze">}}
+{{<mals/item image="images/europeanmerino/" name="Water">}}
+{{<mals/item image="images/europeanmerino/" name="Powder">}}
+{{<mals/item image="images/europeanmerino/" name="Royal" hide="true">}}
+{{<mals/item image="images/europeanmerino/" name="Ultramarine">}}
+{{<mals/item image="images/europeanmerino/" name="Rubarbpie">}}
+{{<mals/item image="images/europeanmerino/" name="Cookedrubarb">}}
+{{<mals/item image="images/europeanmerino/" name="Cherry">}}
+{{<mals/item image="images/europeanmerino/" name="Wine">}}
+{{<mals/item image="images/europeanmerino/" name="Mauve">}}
+{{<mals/item image="images/europeanmerino/" name="Grape">}}
+{{<mals/item image="images/europeanmerino/" name="Magenta">}}
     radios:
       - name: 20 grams
         price: 2.2
