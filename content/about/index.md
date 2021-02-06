@@ -1,21 +1,25 @@
 ---
-name: About
-title: Canadian Waldorf inspired craft supplies
+title: About
+name: Canadian Waldorf inspired craft supplies
 description: Enhance childrens play or get creative yourself with our many colours. We sell Felt, Wool and Felting needles.
-text_colour: "#3E70A5"
-banner: about
+menu: main
+weight: 50
+content:
+- partial: markdown
+  text_colour: "#3E70A5"
+  banner: about
+  markdown: |
+    # About
+    It's about inspiring you, about making the world more colourful. Colour is life.
+    Colour emerges when light meets darkness. The red yellow seam when light moves over dark and the blue purple seam when dark moves over light.
+    Inspire your imagination and create a colourful life with children when the tactile experience of this renewable resource warms your heart.
+    We carry felting wool in over 100 colours, fibres and locks, 100% wool felt and more.
+
+    We are proud to be the Canadian Representative for Wizpick Felting Needles.
+    easy to order... click all the colours you like, choose, compare and add them to the shopping cart all at once.
+    Repeat for another quantity or another quality.
+
+    <span style="color: #868920">I work with the wool myself, I am an avid felter and am happy to provide advise.
+    After 29 years I have graduated  my career as a Waldorf mother and am in the process of returning to Canada,
+    to the beautiful Cowichan Valley on Vancouver Island.  Helen</span>
 ---
-# About
-It's about inspiring you, about making the world more colourful. Colour is life.
-Colour emerges when light meets darkness. The red yellow seam when light moves over dark and the blue purple seam when dark moves over light.
-Inspire your imagination and create a colourful life with children when the tactile experience of this renewable resource warms your heart.
-We carry felting wool in over 100 colours, fibres and locks, 100% wool felt and more.
-We are proud to be the Canadian Representative for Wizpick Felting Needles.
-
-easy to order... click all the colours you like, choose, compare and add them to the shopping cart all at once.
-Repeat for another quantity or another quality.
-
-<span style="color: #868920">I work with the wool myself, I am an avid felter and am happy to provide advise.
-After 29 years I have graduated  my career as a Waldorf mother and am in the process of returning to Canada,
-to the beautiful Cowichan Valley on Vancouver Island.  Helen</span>
-

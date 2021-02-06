@@ -10,15 +10,21 @@
     </head>
     <body>
         <header>
+            <a href="/">
             <img src="/images/logo.svg">
                 <h1>maplesplendor</h1>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="{{ ref . "/wool" }}">Wool</a></li>
-                    <li><a href="{{ ref . "/needles" }}">Needles</a></li>
-                    <li><a href="{{ ref . "/felt" }}">Felt</a></li>
-                    <li><a href="https://ww8.aitsafe.com/cf/review.cfm?userid=A4132041">Cart</a></li>
-                    <li><a href="{{ ref . "/about" }}">About</a></li>
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                            <a href="{{ .URL }}">
+                                {{ .Pre }}
+                                <span>{{ .Name }}</span>
+                            </a>
+                        </li>
+                    {{ end }}
                 </ul>
             </nav>
             <!--<span class="notification"></span>-->
@@ -32,10 +38,15 @@
             <img src="/images/logo.svg">
             </a>
             <ul>
-                <li><a href="{{ ref . "/about" }}">Shopping Information</a></li>
-                <li><a href="https://ww8.aitsafe.com/cf/review.cfm?userid=A4132041">Cart</a></li>
-                <li><a href="{{ ref . "/about" }}">Links</a></li>
-                <li><a href="mailto: buy@maplesplendor.ca">Contact</a></li>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.footer }}
+                    <li class="{{ if $currentPage.IsMenuCurrent "footer" . }}active{{ end }}">
+                        <a href="{{ .URL }}">
+                            {{ .Pre }}
+                            <span>{{ .Name }}</span>
+                        </a>
+                    </li>
+                {{ end }}
             <ul>
         </footer>
 

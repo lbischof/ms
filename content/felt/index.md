@@ -4,6 +4,8 @@ title: Felt
 description: Made of pure new wool, our craft weight 100% wool felt is 1mm thick
   and certified Oeko Tex 100, so it is safe for children. Wool felt is naturally
   nonflammable, dirt repellant and does not frey or tear.
+menu: main
+weight: 30
 content:
   - partial: mals-multiple
     product: Felt sheet

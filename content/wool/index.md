@@ -1,7 +1,9 @@
 ---
-name: Wool
-title: Colourful felting fibres
+name: Colourful felting fibres
+title: Wool
 description: More than a hundred colours to choose from. Find the suitable fibre for your felting project. Merino is finer than Corriedale. Mohairlocks in many colours.
+menu: main
+weight: 10
 content:
   - partial: mals-multiple
     product: Corriedale

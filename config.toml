@@ -10,3 +10,23 @@ DefaultContentLanguage = "de"
 
 [markup.goldmark.renderer]
   unsafe = true
+  hardWraps = true
+
+[menu]
+[[menu.main]]
+identifier = "cart"
+name = "Cart"
+url = "https://ww8.aitsafe.com/cf/review.cfm?userid=A4132041"
+weight = 40
+
+[[menu.footer]]
+identifier = "cart"
+name = "Cart"
+url = "https://ww8.aitsafe.com/cf/review.cfm?userid=A4132041"
+weight = 20
+
+[[menu.footer]]
+identifier = "contact"
+name = "Contact"
+url = "mailto: buy@maplesplendor.ca"
+weight = 40

@@ -1,5 +1,5 @@
 {{ if .this.banner }}
-    <div class="banner banner-{{ urlize .this.product }}"></div>
+    <div class="banner banner-{{ urlize .Page.Title }}"></div>
 {{ end }}
 <div class="container" {{ with .this.text_colour }}style="color: {{.}}"{{ end }}>
 {{ .this.markdown | .Page.RenderString }}
