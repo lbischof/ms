@@ -1,0 +1,79 @@
+{{ if not .this.product }}
+    {{ errorf "%v: product is empty" .Page.Path }}
+{{ end }}
+{{ if and .this.radios .this.price }}
+    {{ errorf "%v: price and radios" .Page.Path }}
+{{ end }}
+{{ if not (or .this.radios .this.price) }}
+    {{ errorf "%v: product has no price" .Page.Path }}
+{{ end }}
+
+{{ if not .this.hide }}
+    {{ if .this.banner }}
+        <div class="banner banner-{{ urlize .this.product }}"></div>
+    {{ end }}
+    <section class="mals-multiple {{ with .this.product }}{{ lower . }}{{ end }} {{ if .this.textboxes }}textboxes{{ end }}" {{ with .this.text_colour }}style="color: {{ . }}"{{ end }}>
+        {{ if .this.description }}
+            <div class="description">
+                {{ .this.description | .Page.RenderString }}
+            </div>
+        {{ end }}
+        {{ $product := .this.product }}
+        <form class="mals-multiple" action="https://ww8.aitsafe.com/cf/addmulti.cfm" method="post">
+            <input type="hidden" name="userid" value="A4132041">
+            <input type="hidden" name="return" value="{{ .Page.Permalink }}"> <!-- TODO: return -->
+            {{ $textboxes := .this.textboxes }}
+            {{ range .this.colours }}
+                {{ if not .hide }}
+                    <div class="colours">
+                        {{ $path := urlize (printf "images/%s/%s.jpg" $product .name) }}
+                        {{- $img := $.Page.Resources.GetMatch $path -}}
+                        {{- if $img -}}
+                            <img src="{{ $img.Permalink }}" />
+                        {{- else -}}
+                            {{ errorf "Cannot get image %v" $path }}
+                        {{- end -}}
+                        <label>
+                            {{ if not $textboxes }}
+                                <input type="checkbox" name="product1[]" value="{{ .name }}">
+                            {{ end }}
+                            <span {{ with .color }}style="color: {{.}}"{{ end }}>
+                                {{ .name }}
+                            </span>
+                            {{ with .gauge }}
+                                {{ . }}
+                            {{ end }}
+                            {{ with .usage }}
+                                <br>{{ . }}
+                            {{ end }}
+                            {{- if $textboxes -}}
+                                <input type="number" min="1" name="product1[]">
+                            {{- end -}}
+                        </label>
+                    </div>
+                {{ end }}
+            {{ end }}
+            <div class="radios">
+                {{ $oneradio := eq (len .this.radios) 1 }}
+                {{ range $i, $radio := .this.radios }}
+                    <label>
+                        <input name="productpr1"
+                               type="{{ if $oneradio }}hidden{{ else }}radio{{ end }}"
+                               value="{{ $.this.product }}, {{ $radio.name }} :{{ $radio.price }}"
+                               {{ if or $oneradio (eq $i 1) }}checked{{ end }}>
+                            {{ $radio.name }}
+                    </label>
+                {{ else }}
+                    <input type="hidden" name="productpr1" value="{{ .this.product }}, : {{ .this.price }}">
+                {{ end }}
+                <input type="hidden" name="noqty1" value="1">
+                <input type="hidden" name="qty1">
+                <noscript>
+                    <p>Please add up how many total: <input type="number" name="qty1"></p>
+                </noscript>
+
+                <button>Cart</button>
+            </div>
+        </form>
+    </section>
+{{ end }}
