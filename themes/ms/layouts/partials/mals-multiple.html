@@ -12,7 +12,7 @@
     {{ if .this.banner }}
         <div class="banner banner-{{ urlize .this.product }}"></div>
     {{ end }}
-    <section class="mals-multiple {{ with .this.product }}{{ lower . }}{{ end }} {{ if .this.textboxes }}textboxes{{ end }}" {{ with .this.text_colour }}style="color: {{ . }}"{{ end }}>
+    <section class="mals-multiple {{ with .this.product }}{{ urlize . }}{{ end }} {{ if .this.textboxes }}textboxes{{ end }}" {{ with .this.text_colour }}style="color: {{ . }}"{{ end }}>
         {{ if .this.description }}
             <div class="description">
                 {{ .this.description | .Page.RenderString }}
@@ -26,18 +26,20 @@
             {{ range .this.colours }}
                 {{ if not .hide }}
                     <div class="colours">
-                        {{ $path := urlize (printf "images/%s/%s.jpg" $product .name) }}
-                        {{- $img := $.Page.Resources.GetMatch $path -}}
-                        {{- if $img -}}
-                            <img src="{{ $img.Permalink }}" />
-                        {{- else -}}
-                            {{ errorf "Cannot get image %v" $path }}
-                        {{- end -}}
+                        {{ if not $.this.no_images }}
+                            {{ $path := urlize (printf "images/%s/%s.jpg" $product .name) }}
+                            {{- $img := $.Page.Resources.GetMatch $path -}}
+                            {{- if $img -}}
+                                <img src="{{ $img.Permalink }}" />
+                            {{- else -}}
+                                {{ errorf "Cannot get image %v" $path }}
+                            {{- end -}}
+                        {{ end }}
                         <label>
                             {{ if not $textboxes }}
                                 <input type="checkbox" name="product1[]" value="{{ .name }}">
                             {{ end }}
-                            <span {{ with .color }}style="color: {{.}}"{{ end }}>
+                            <span {{ with .text_colour }}style="color: {{.}}"{{ end }}>
                                 {{ .name }}
                             </span>
                             {{ with .gauge }}
@@ -61,7 +63,7 @@
                                type="{{ if $oneradio }}hidden{{ else }}radio{{ end }}"
                                value="{{ $.this.product }}, {{ $radio.name }} :{{ $radio.price }}"
                                {{ if or $oneradio (eq $i 1) }}checked{{ end }}>
-                            {{ $radio.name }}
+                        {{ $radio.name }} ${{ $radio.price }}
                     </label>
                 {{ else }}
                     <input type="hidden" name="productpr1" value="{{ .this.product }}, : {{ .this.price }}">

@@ -1,0 +1,173 @@
+---
+name: Needles
+title: Wizpick colour-coded Felting Needles
+description: Sixteen different felting needles for every handcraft use. Try them all or order your favorites seperately. For fine fibres choose the Merino Set.
+content:
+- partial: mals-multiple
+  product: Wizpick Felting Needles
+  textboxes: true
+  no_images: true
+  banner: true
+  description: |
+    # Wizpick Felting Needles
+    <span style="color: #E5651A">With the globaly recognised colour code system</span>
+
+    There are endless possibilities, when working with wool.
+    The hair from sheep is a sustainable, renewable resource, not to mention it's ability to keep you warm and dry.
+    You can knit wool, weave wool or felt wool: wet felt it with soap and water or dry felt it with a felting needle or combine both methods.
+
+    When jabbed into wool the barbs on the felting needle catch and tangle the fibre sculpturing fine detail.
+    The gauge (diameter) for wool felting needles ranges from 32 (coarse) to 42 (super fine).
+    In general, start your project with a coarser needle and work to a finer needle for finishing.
+    Choose thicker needles to felt coarse fibers and finer needles when working with finer fibers.
+  colours:
+      - name: Lime
+        gauge: 32 3x3x3
+        usage: Course
+        text_colour: "#7CBC52"
+      - name: Green
+        gauge: 36 3x3x3
+        usage: Fast
+        text_colour: "#599732"
+      - name: Pink
+        gauge: 32 3x3x0
+        usage: Strong
+        text_colour: "#FC8E99"
+      - name: Mauve
+        gauge: 36 2x2x2
+        usage: Kids
+        text_colour: "#CE85B1"
+      - name: Gilt
+        gauge: 32 2x2x2
+        usage: Reverse
+        text_colour: ""
+  radios:
+    - name: Price group one
+      price: 2
+
+- partial: mals-multiple
+  product: Wizpick Felting Needles
+  textboxes: true
+  no_images: true
+  banner: false
+  description: |
+    Wizpick felting needles cover the whole range of handcraft use and will allow you to explore new techniques and ideas.
+    The best tools for the best results. More information is available on <a href="http://wizpick.com/en/dynamic" target="_blank">www.wizpick.com</a>
+  colours:
+      - name: Blue
+        gauge: 32 8x0x0
+        usage: Sideways
+        text_colour: "#4F579A"
+      - name: Brown
+        gauge: 40 3x3x3
+        usage: Indent
+        text_colour: "#82662D"
+      - name: Burgundy
+        gauge: 38 2x2x2
+        usage: Deep
+        text_colour: "#944850"
+      - name: Yellow
+        gauge: 40 2x2x2
+        usage: Outline
+        text_colour: "#F1E13B"
+      - name: Orange
+        gauge: 40 2x2x2
+        usage: Tip felter
+        text_colour: "#FDAD53"
+      - name: Gold
+        gauge: 40 3x3x0
+        usage: like Pink
+        text_colour: "#FDD047"
+      - name: Cream
+        gauge: 40 2x2x2
+        usage: Merino
+        text_colour: "#EEDA84"
+  radios:
+    - name: Price group two
+      price: 2.3
+
+- partial: mals-multiple
+  product: Wizpick Felting Needles
+  textboxes: true
+  no_images: true
+  banner: false
+  description: |
+    Most felting needles are triangular with three working edges, except Star Needles, which are a new innovation with four edges.
+  colours:
+      - name: Red
+        gauge: 36 2x2x2x2
+        usage: Condense
+        text_colour: "#E1483E"
+      - name: Peach
+        gauge: 38 2x2x2x2
+        usage: like Red
+        text_colour: "#FCC699"
+      - name: White
+        gauge: 42 2x2x2
+        usage: Fine
+        text_colour: "#D0D0CF"
+      - name: Grey
+        gauge: 42 1x1x1
+        usage: Finishing
+        text_colour: "#797972"
+      - name: Aqua
+        gauge: 40 6x0x0
+        usage: like Blue
+        text_colour: "#6EAAC3"
+      - name: Silver
+        gauge: 40 2x2x2
+        usage: like Gilt
+        text_colour: ""
+  radios:
+    - name: Price group three
+      price: 2.9
+
+- partial: markdown
+  markdown: |
+    Felting needles can also be used to join yarn, to mend holes in felted or knitted fabric, for rooting doll hair or to start or maintain dreadlocks.
+    Often wool is added to dreadlocks to create a unique hairdo.
+- partial: markdown
+  markdown: |
+    # Needle Felting Sets
+    There are a few thousand different felting needles available for
+    specific industrial applications.
+    Wizpick felting needles have been carefully selected to cover every
+    handicraft use. Flowers on felted bead jewelry demand or need different
+    needles than life-size needle felted sculptures.
+    Of course it takes some
+    patience and practice to discover the uniqueness of each and every needle.
+    More information is available on <a href="http://wizpick.com/en/dynamic" target="_blank">www.wizpick.com</a>
+
+- partial: mals-single
+  product: Completion Needle Set
+  textbox: true
+  price: 39
+  text_colour: "#3E70A5"
+  description: |
+      # Completion Set $39.-
+      18 needles: Get them all
+- partial: mals-single
+  product: Novice Needle Set
+  textbox: true
+  price: 19
+  text_colour: "#00B03E"
+  description: |
+      # Novice Set $19.-
+      9 needles: Start with these<br>red, burgundy, mauve, brown,<br>orange, yellow, cream, blue, gilt
+- partial: mals-single
+  product: Devotion Needle Set
+  textbox: true
+  price: 20
+  text_colour: "#D43026"
+  description: |
+      # Devotion Set $20.-
+      9 needles: The second half
+- partial: mals-single
+  product: Merino Needle Set
+  textbox: true
+  price: 15
+  text_colour: "#AE00AD"
+  description: |
+      # Merino Set $15.-
+      6 needles: Fine fibre experts<br>orange, white, grey, aqua, cream, silver
+---

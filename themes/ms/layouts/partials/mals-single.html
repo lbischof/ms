@@ -1,0 +1,16 @@
+<section class="mals-single {{ urlize .this.product }} {{ if .this.textboxes }}textboxes{{ end }}" {{ with .this.text_colour }}style="color: {{.}}"{{ end }}>
+    {{ with .this.description }}
+        <div class="description">
+            {{ . | $.Page.RenderString }}
+        </div>
+    {{ end }}
+    <form action="https://ww8.aitsafe.com/cf/add.cfm" method="post">
+        <input type="hidden" name="userid" value="A4132041">
+        <input type="hidden" name="return" value="{{ .Page.Permalink }}">
+        <input type="hidden" name="price" value="{{ .this.price }}">
+        <input type="hidden" name="product" value="{{ .this.product }}">
+        <input type="number" min="1" name="qty" value="1">
+
+            <button>Cart</button>
+    </form>
+</section>
