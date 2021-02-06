@@ -1,0 +1,233 @@
+---
+title: Waldorf Schools
+description: A list of Waldorf Schools and Initiatives in Canada from west to east.
+content:
+- partial: markdown
+  text_colour: "#FF52FE"
+  markdown: |
+    # Waldorf Schools and initiatives in Canada
+    Isn't it amazing that there are nine Waldorf Schools in British Columbia? There are Waldorf Initiatives in many places. With this list we hope to help you connect with like minded parents. We appreciate your feedback.
+
+- partial: markdown
+  text_colour: "#77A5CC"
+  markdown: |
+    ## British Columbia
+    Sunrise Waldorf School
+    RR #7, 4344 Peter's Road
+    Duncan BC, V9L 6M3
+    250 743-7253
+    [www.sunrisewaldorfschool.org](http://www.sunrisewaldorfschool.org)
+
+    Tree of Life Playschool
+    Victoria BC
+    250 813-3050
+    [www.treeoflifeplayschool.ca](http://www.treeoflifeplayschool.ca)
+
+    <p>
+    Comox Valley Waldorf School<br>
+    2311 Rosewall Cres.<br>
+    Courtenay BC, V9N 8R9<br>
+    250 871-7777<br>
+    <a target="_blank" href="https://www.comoxvalleywaldorf.com">www.comoxvalleywaldorf.com</a>
+    </p>
+
+    <p>
+    A Child's Garden<br>
+    180 Head St. <br>
+    Salt Spring Island BC<br>
+    250 538-0246
+    </p>
+
+    <p>
+    Cedar Valley Waldorf School<br>
+    38265 Westway Ave<br>
+    Box 5356<br>
+    Squamish BC,  V8B 0C2<br>
+    604 898-3287<br>
+    <a target="_blank" href="http://www.cedarvalleyschool.com">www.cedarvalleyschool.com</a>
+    </p>
+
+    <p>
+    Whistler Waldorf School<br>
+    P.O. Box 1501<br>
+    7324 Kirkpatrick Way<br>
+    Whistler BC , V0N 1B0 <br>
+    604 932-1885<br>
+    <a target="_blank" href="http://www.whistlerwaldorf.com">www.whistlerwaldorf.com</a>
+    </p>
+
+    <p>
+    Vancouver Waldorf School<br>
+    2725 St. Christopher's Road<br>
+    N. Vancouver BC, V7K 2B6<br>
+    604 985-7435 fax: 4948<br>
+    <a target="_blank" href="http://www.vws.ca">www.vws.ca</a>
+    </p>
+
+    <p>
+    Cedar Bridge School<br>
+    730 Whitvale Road<br>
+    Lumby BC, V0E 2G7<br>
+    250 547-9212<br>
+    <a target="_blank" href="http://www.cedarbridgeschool.org">www.cedarbridgeschool.org</a>
+    </p>
+
+    <p>
+    Nelson Waldorf School<br>
+    Box 165, Silver King Road<br>
+    Nelson BC, V1L 5P9<br>
+    250 352-6919<br>
+    <a target="_blank" href="http://www.nelsonwaldorf.org">www.nelsonwaldorf.org</a>
+    </p>
+
+    ## Alberta
+    <p>
+    Calgary Waldorf School<br>
+    515 Cougar Ridge Dr. S.W.<br>
+    Calgary AB, T3H 5G9<br>
+    403 287-1868<br>
+    <a target="_blank" href="http://www.calgarywaldorf.org">www.calgarywaldorf.org</a>
+    </p>
+
+    <p>
+    The Waldorf Education Society of Edmonton<br>
+    <a target="_blank" href="http://www.wese.ca">www.wese.ca</a>
+    </p>
+
+    <p>
+    Waldorf Independent School of Edmonton<br>
+    7211 96A Ave<br>
+    Edmonten AB, T6B 1B5<br>
+    780 466-3312<br>
+    <a target="_blank" href="http://www.thewise.ca">www.thewise.ca</a>
+    </p>
+    <!--more-->
+    <h2>Ontario</h2>
+    <p>
+    Little Lions Waldorf Daycare & Kindergarten<br>
+    211 Clarke Street<br>
+    Thunder Bay ON, P7A 2M1<br>
+    807 344-2298<br>
+    <a target="_blank" href="http://www.littlelionswaldorf.ca">www.littlelionswaldorf.ca</a>
+    </p>
+
+    <p>
+    Northern Lights School Initiative<br>
+    Thunder Bay ON<br>
+    807 707-4311<br>
+    <a target="_blank" href="https://www.northernlightsschool.ca/">www.northernlightsschool.ca</a>
+    </p>
+
+    <p>
+    Trillium Waldorf School<br>
+    540 Victoria Road North<br>
+    Guelph ON, N1E 6Z4<br>
+    519 821-5140<br>
+    <a target="_blank" href="http://www.guelphwaldorf.ca/">www.guelphwaldorf.ca</a>
+    </p>
+
+    <p>
+    Halton Waldorf School<br>
+    2193 Orchard Road<br>
+    Burlington ON, L7R 3X5<br>
+    905 331-4387<br>
+    <a target="_blank" href="http://www.haltonwaldorf.com/">www.haltonwaldorf.com</a>
+    </p>
+
+    <p>
+    London Waldorf School<br>
+    7 Beaufort Street<br>
+    London ON, N6G 1A5<br>
+    519 858-8862<br>
+    <a target="_blank" href="http://www.londonwaldorf.ca">www.londonwaldorf.ca</a>
+    </p>
+
+    <p>
+    Waldorf Academy<br>
+    formerly Alan Howard<br>
+    250 Madison Avenue<br>
+    Toronto ON, M4V 2W6<br>
+    416 962-6447 <br>
+    <a target="_blank" href="http://www.waldorfacademy.org">www.waldorfacademy.org</a><br>
+    </p>
+
+    <p>
+    Toronto Waldorf School<br>
+    9100 Bathurst Street, #1<br>
+    Thornhill ON, L4J 8C7<br>
+    905 881-1611<br>
+    <a target="_blank" href="http://www.torontowaldorfschool.com">www.torontowaldorfschool.com</a>
+    </p>
+
+    <p>
+    Da Vinci School<br>
+    33 Robert Street<br>
+    Toronto ON, M5S 2K2<br>
+    416 393-8204<br>
+    <a target="_blank" href="http://www.davincischool.ca">www.davincischool.ca</a>
+    </p>
+
+    <!-- Site returns 404 (even though website loads correctly)
+    <p>
+    Edge Hill Country School<br>
+    Durham ON, N0G 1R0<br>
+    519 369-3195<br>
+    <a target="_blank" href="https://edgehillschool.org">www.edgehillschool.org/</a>
+    </p>
+    -->
+
+    <p>
+    Mulberry Waldorf School<br>
+    25 Markland Street<br>
+    Kingston ON, K7K 1S2<br>
+    613 542-0669<br>
+    <a target="_blank" href="http://www.mulberrywaldorfschool.ca">www.mulberrywaldorfschool.ca</a>
+    </p>
+
+    <!--<p>
+    Polaris School and Centre<br>
+    225 Donald St. Suite 223<br>
+    Ottawa ON, K1K 1N1<br>
+    613 842-4322<br>
+    <a target="_blank" href="https://www.polariswaldorf.ca">www.polariswaldorf.ca</a>
+    </p>-->
+
+    <p>
+    Rowan Tree Preschool<br>
+    534 George St. N.<br>
+    Peterborough ON, K9H 3S2<br>
+    705-748-4723<br>
+    <a target="_blank" href="http://rowantreeschool.ca/">www.rowantreeschool.ca</a>
+    </p>
+
+    <h2>Quebec</h2>
+    <p>
+    Ecole Rudolf Steiner de Montreal<br>
+    4855 ave. de Kensington<br>
+    Montreal, QC, H3X 3S6<br>
+    514 481-5686<br>
+    <a target="_blank" href="http://www.ersm.org">www.ersm.org</a>
+    </p>
+
+    <p>
+    Ecole les Enfants de la Terre<br>
+    2000, chemin Val-Estrie<br>
+    Waterville QC, J0B 3H0<br>
+    819 822-5302<br>
+    <a target="_blank" href="http://www.enfants-de-la-terre.org">www.enfants-de-la-terre.org</a>
+    </p>
+
+    <h2>Nova Scotia</h2>
+    <p>
+    The South Shore Waldorf School<br>
+    64 School Rd.<br>
+    Blockhouse NS, BOJ 1EO<br>
+    902 624-0874<br>
+    <a target="_blank" href="http://www.waldorfns.org">www.waldorfns.org</a>
+    </p>
+
+- partial: markdown
+  text_colour: "#FF52FE"
+  markdown: |
+    We are not responsible for the content of external links. Schools or Initiatives that do not explicitly state that they are Waldorf, might be Waldorf inspired. We would like to also support small schools that cannot yet afford Waldorf accreditation.
+---

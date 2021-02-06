@@ -2,5 +2,12 @@
     <div class="banner banner-{{ urlize .Page.Title }}"></div>
 {{ end }}
 <div class="container" {{ with .this.text_colour }}style="color: {{.}}"{{ end }}>
-{{ .this.markdown | .Page.RenderString }}
+    {{ $markdown := split .this.markdown "<!--more-->" }}
+    <div>
+    {{ range $markdown }}
+        <div>
+        {{ . | $.Page.RenderString }}
+        </div>
+    {{ end }}
+    </div>
 </div>
