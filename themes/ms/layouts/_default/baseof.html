@@ -31,7 +31,15 @@
         </header>
 
         <main>
-            {{- block "main" . }}{{- end }}
+            {{ if .Content }}
+                <section {{ with .Params.text_colour }}style="color:{{ . }}"{{ end }}>
+                {{ .Content }}
+                </section>
+            {{ end }}
+
+            {{ range .Params.content }}
+                {{ partial .partial (dict "Page" $.Page "this" .) }}
+            {{ end }}
         </main>
         <footer>
             <a href="#" title="back to top">

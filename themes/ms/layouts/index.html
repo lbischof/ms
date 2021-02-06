@@ -1,9 +1,0 @@
-{{ define "main" }}
-    <section {{ with .Params.text_colour }}style="color:{{ . }}"{{ end }}>
-    {{ .Content }}
-    </section>
-
-    {{ range .Params.content }}
-        {{ partial .partial (dict "Page" $.Page "this" .) }}
-    {{ end }}
-{{ end }}
