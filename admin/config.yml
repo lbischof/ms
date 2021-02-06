@@ -1,0 +1,187 @@
+backend:
+  name: github
+  repo: lbischof/ms
+  branch: source
+
+media_folder: source/images
+
+collections:
+  - name: pages
+    label: Pages
+    identifier_field: name
+    folder: data/pages
+    format: yml
+    extension: yml
+    editor:
+      preview: false
+    fields:
+      - label: "Name"
+        name: "name"
+        widget: "string"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+      - label: 'Section'
+        name: 'content'
+        widget: 'list'
+        typeKey: partial
+        types:
+          - label: 'Mals Multiple'
+            name: 'mals-multiple'
+            widget: object
+            summary: 'Mals Multiple: {{fields.product}}'
+            fields:
+              - label: Product
+                name: product
+                widget: string
+              - label: Banner
+                name: banner
+                widget: boolean
+              - label: Textboxes
+                name: textboxes
+                widget: boolean
+              - label: Text Colour
+                name: text_colour
+                widget: string
+              - label: "Description"
+                name: "description"
+                widget: markdown
+              - label: Radios
+                label_singular: Radio
+                name: radios
+                widget: list
+                summary: '{{fields.name}} ${{fields.price}}'
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Price
+                    name: price
+                    valueType: float
+                    widget: number
+              - label: Colours
+                label_singular: Colour
+                name: colours
+                widget: list
+                summary: '{{fields.name}} (hide: {{fields.hide}})'
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Hide
+                    name: hide
+                    required: false
+                    default: false
+                    widget: boolean
+          - label: 'Mals Single'
+            name: 'mals-single'
+            widget: object
+            summary: 'Mals Single: {{fields.product}}'
+            fields:
+              - label: Product
+                name: product
+                widget: string
+              - label: Textbox
+                name: textbox
+                widget: boolean
+              - label: Text Colour
+                name: text_colour
+                widget: string
+              - label: Price
+                name: price
+                valueType: float
+                widget: number
+              - label: "Description"
+                name: "description"
+                widget: markdown
+          - label: 'HTML'
+            name: 'html'
+            widget: object
+            summary: 'HTML'
+            fields:
+              - label: HTML
+                name: html
+                widget: text
+          - label: 'Text'
+            name: 'markdown'
+            widget: object
+            summary: 'Text: {{fields.markdown}}'
+            fields:
+              - label: Banner
+                name: banner
+                widget: boolean
+              - label: Text Colour
+                name: text_colour
+                widget: string
+              - label: Text
+                name: markdown
+                widget: markdown
+          - label: 'Homepage'
+            name: 'homepage'
+            widget: object
+            summary: 'Homepage: {{fields.markdown}}'
+            fields:
+              - label: Image
+                name: image
+                widget: image
+              - label: Text Colour
+                name: text_colour
+                widget: string
+              - label: Text
+                name: markdown
+                widget: markdown
+              - label: 'Button'
+                name: 'button'
+                widget: object
+                summary: '{{fields.text}}'
+                fields:
+                - label: Text
+                  name: text
+                  widget: string
+                - label: Link
+                  name: link
+                  widget: string
+              - label: 'Secondary'
+                name: 'secondary'
+                widget: object
+                summary: '{{fields.text}}'
+                fields:
+                - label: Text
+                  name: text
+                  widget: string
+                - label: Link
+                  name: link
+                  widget: string
+          - label: 'Links'
+            name: 'links'
+            widget: object
+            summary: 'Links'
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Link Sections
+                label_singular: Link Section
+                name: links
+                widget: list
+                summary: '{{fields.name}}'
+                fields:
+                  - label: Name
+                    name: name
+                    widget: string
+                  - label: Links
+                    label_singular: Link
+                    name: links
+                    widget: list
+                    summary: '{{fields.name}}'
+                    fields:
+                      - label: Name
+                        name: name
+                        widget: string
+                      - label: URL
+                        name: url
+                        widget: string
+                        pattern: ['^https?://', "Must begin with http:// or https://"]
