@@ -1,5 +1,26 @@
+---
+name: Homepage
+title: Canadian source for felting fibre and needles
+description: Isn't it amazing what you can make with wool? We would like to encourage you to play with fibre.
+content:
+- partial: homepage
+  image: /images/homepageball.jpg
+  text_colour: "#BB2B23"
+  markdown: |
+      # Have you tried felting?
+      Isn't it amazing what you can make with wool?<br>
+      We would like to encourage you to play with fibre.
+  button:
+      text: Endulge in colour
+      link: /wool/
+  secondary:
+      text: get the tools
+      link: /needles/
 
-# Canadian
-Maplesplendor is a home based business located on Vancouver island, and yes we ship worldwide.
-# for 15 years
-It all started years ago in Nelson, BC. Creativity can be soul saving for young families. I loved sharing my passion for felting in my store. Sourcing many of our quality Waldorf products in Europe, I have been able to visit many trade shows. Now back in BC, I continue to provide colourful products and expert advice.
+- partial: markdown
+  markdown: |
+      # Canadian
+      Maplesplendor is a home based business located on Vancouver island, and yes we ship worldwide.
+      # for 15 years
+      It all started years ago in Nelson, BC. Creativity can be soul saving for young families. I loved sharing my passion for felting in my store. Sourcing many of our quality Waldorf products in Europe, I have been able to visit many trade shows. Now back in BC, I continue to provide colourful products and expert advice.
+---

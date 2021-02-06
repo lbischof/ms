@@ -1,0 +1,11 @@
+<div class="homepage container" {{ with .this.text_colour }}style="color: {{.}}"{{ end }}>
+
+<img src="{{ .this.image }}" alt="Maplesplendor">
+<div class="content">
+    {{ .this.markdown | .Page.RenderString }}
+    <form method="get" action="{{ .this.button.link }}">
+        <button type="submit">{{ .this.button.text }}</button>
+</form>
+<a href="{{ .this.secondary.link }}">{{ .this.secondary.text }}</a>
+</div>
+</div>

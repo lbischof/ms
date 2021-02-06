@@ -49,6 +49,8 @@
                 {{ end }}
             <ul>
         </footer>
+        {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
+        <script src="{{ $js.Permalink }}"></script>
 
     </body>
 
